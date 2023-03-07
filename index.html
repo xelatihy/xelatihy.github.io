@@ -3,1031 +3,400 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Fabio Pellacini's Homepage</title>
-		<link rel="stylesheet" media="all" href="./style/style.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<style>
+      @import url(https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap&subset=latin-ext);
+
+      body {
+          margin: 0 auto;
+          font-family: "Lato", "San Francisco", "Helvetica Neue", "Helvetica", sans-serif;
+          font-size: 17px;
+          font-variant-ligatures: common-ligatures;
+          font-variant-numeric: oldstyle-nums;
+          line-height: 1.6em;
+          text-align: justify;
+      }
+
+      header, footer, article {
+          max-width: 768px;
+          padding: 12px;
+          margin: 0 auto;
+      }
+
+      nav {
+          text-align: left;
+      }
+
+      nav a {
+          color: firebrick;
+          line-height: 18px;
+          padding: 4px 6px;
+          text-transform: lowercase;
+      }
+
+      nav:after {
+          clear: both;
+      }
+
+      h1 {
+          font-size: 2.5em;
+          line-height: 1.2em;
+          margin: 2em 0 0.5em;
+          text-align: left;
+      }
+
+      h2 {
+          font-size: 1.5em;
+          margin: 2em 0 0.5em;
+      }
+
+      h3 {
+          font-size: 1.2em;
+          margin: 1em 0 0.25em;
+      }
+
+      p {
+          margin: 0 0 0.5em 0;
+      }
+
+      ol, ul {
+          margin: 0 0 18px 0;
+          padding-left: 0;
+          list-style: none;
+      }
+
+      li {
+          clear: both;
+          overflow: auto;
+          margin: 0.5em 0;
+      }
+
+      a {
+          text-decoration: none;
+          color: firebrick;
+      }
+
+      a:hover {
+          text-decoration: underline;
+      }
+
+      img {
+          max-width: 100%;
+      }
+
+      li > img {
+          display: block;
+          width: 25%;
+          max-width: 100%;
+          float: right;
+          margin: 0 0 1em 1em;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      }
+
+      iframe {
+          display: block;
+          max-width: 100%;
+          margin: 1em auto;
+      }
+
+      video {
+          display: block;
+          max-width: 100%;
+          margin: 1em auto;
+      }
+
+      figure {
+          margin: 24px 0;
+          padding: 0;
+          max-width: 100%;
+          text-align: center;
+      }
+
+      figure img, video {
+          max-width: 100%;
+      }
+
+      figcaption h3, figcaption p {
+          margin: 4px 0;
+      }
+
+      div.paperlinks {
+          margin: 24px 0;
+          padding: 0;
+          text-align: center;
+      }
+
+      div.paperlinks li {
+          display: inline;
+      }
+
+      div.paperlinks li a {
+          color: white;
+          background: black;
+          font-size: 11px;
+          line-height: 18px;
+          letter-spacing: 0.5px;
+          padding: 4px 6px;
+          text-transform: uppercase;
+      }
+
+      div {
+          padding: 0;
+          margin: 0;
+      }
+
+      @media print {
+          body, article {
+              width: 768px;
+              max-width: 768px;
+              margin: 0;
+              padding: 0;
+          }
+          header, footer {
+              display: none;
+          }
+          @page {
+              size: 850px 1100px;
+              margin: 100px;
+              padding: 0px;
+          }
+      }
+
+		</style>
 	</head>
 	<body lang="en">
-	    <header>
-            <nav>
-              <a href='./index.html'>about</a>
-              <a href='./index.html#research'>research</a>
-              <a href='./index.html#books'>books</a>
-              <a href='https://github.com/xelatihy'>code</a>
-              <a href='./index.html#publications'>publications</a>
-              <a href='./index.html#courses'>courses</a>
-    	    </nav>
+	  <header>
+      <nav>
+        <a href='index.html'>about</a>
+        <a href='index.html#research'>research</a>
+        <a href='index.html#books'>books</a>
+        <a href='https://github.com/xelatihy'>code</a>
+        <a href='index.html#publications'>publications</a>
+        <a href='index.html#courses'>courses</a>
+    	</nav>
 	    </header>
-      <article>
-            <h1 id="fabio-pellacini">Fabio Pellacini</h1>
-            <p>Full Professor of Computer Science<br />
-            University of Modena and Reggio Emilia</p>
-            <h2 id="background">Background</h2>
-            <p>Since the Winter of 2023, I am a Full Professor in <a
-            href="https://www.fim.unimore.it/">Computer Science</a> at
-            the <a href="https://www.unimore.it/">University of Modena
-            and Reggio Emilia</a>, where I work on Computer Graphics
-            methods to solve content creation and design problems.
-            Before then I was an Associate Professor (2011–2017) and
-            then Full Professor (2017–2023) in <a
-            href="http://www.di.uniroma1.it">Computer Science</a> at <a
-            href="http://www.uniroma1.it">Sapienza University of
-            Rome</a>, and an Assistant Professor (2005-2009) and then an
-            Associate Professor (2009-2011) in <a
-            href="http://www.cs.dartmouth.edu">Computer Science</a> at
-            <a href="http://www.dartmouth.edu">Dartmouth College</a>, an
-            Ivy League University. Before Dartmouth I was a Visiting
-            Assistant Professor (2004-2005) in <a
-            href="http://www.cis.cornell.edu">Computing and Information
-            Science</a> at <a href="http://www.cornell.edu">Cornell
-            University</a>. I also worked in the research division of <a
-            href="http://www.pixar.com">Pixar Animation Studios</a>
-            (2002-2004) developing new algorithms used in various award
-            winning feature films (<em>Monster’s Inc., Finding Nemo, The
-            Incredibles, Cars</em>). I received a Ph.D. in <a
-            href="http://www.cs.cornell.edu">Computer Science</a> from
-            <a href="http://www.cornell.edu">Cornell University</a> in
-            2002, working at the <a
-            href="http://www.graphics.cornell.edu">Program of Computer
-            Graphics</a>, and a Laurea degree in <a
-            href="http://www.fis.unipr.it">Physics</a> (equiv. to BS and
-            MS) from the <a href="http://www.unipr.it">University of
-            Parma</a>, Italy. I have received an NSF CAREER award in
-            2008, and an Alfred P. Sloan research fellowship in
-            2009.</p>
-            <h2 id="research">Research</h2>
-            <h3 id="overview">Overview</h3>
-            <p>My main research interest is the investigation of
-            computational methods to support design of 3D objects, from
-            their shape to their appearance, through the development of
-            interactive rendering algorithms, intuitive design
-            interfaces, novel fabrication methods, and user studies.
-            This research led to various theoretical results and
-            practical applications in the areas of interactive realistic
-            rendering, 3d printing, user interfaces and visual
-            perception. A comprehensive list of <a
-            href="#publications">publications</a> is available.</p>
-            <h3 id="collaborative-design-workflows">Collaborative Design
-            Workflows</h3>
-            <p>While cloud-based computing have ushered an era of
-            realtime collaborative tools, 3D content creation is still
-            mostly done by artists working individually on single
-            assets. In this project, we investigate methods that allows
-            artists to freely collaborate on 3D content both offline,
-            via version control, and in realtime, via collaborative
-            interfaces.</p>
-            <!--
-            Related papers:
-            (6) [SceneGit: a Practical System for Diffing and Merging 3D Environments][scenegit19],
-            (4) [LevelMerge: Collaborative Game Level Eediting by Mmerging Labeled Graphs][levelmerge16],
-            (3) [cSculpt: A System for Collaborative Sculpting][csculpt16],
-            (2) [MeshHisto: Collaborative Modeling by Sharing and Retargeting Editing Histories][meshhisto15],
-            (1) [MeshGit: Diffing and Merging Meshes for Polygonal Modeling][meshgit13].
-            -->
-            <h3 id="intuitive-appearance-design">Intuitive appearance
-            design</h3>
-            <p>Designing appearance, i.e. material and lighting
-            parameters, is cumbersome since current interfaces require
-            designers to specify algorithmic parameters that are only
-            indirectly related to objects’ appearance. My work
-            investigates interfaces that allow users to effectively
-            specify environments’ final looks, and algorithms that
-            automatically set the appearance parameters required to
-            achieve users’ goals.</p>
-            <!--
-            Related papers:
-            (25) [Texture Retrieval in the Wild Through Detection-Based Attributes][textons19],
-            (24) [Texel-Att: Representing and Classifying Element-based Textures by Attributes][texelatt19],
-            (23) [Grammar-based procedural animations for motion graphics][gmotion19],
-            (22) [gMotion: A Spatio-Temporal Grammar for the Procedural Generation of Motion Graphics][gmotion18],
-            (21) [sLayer: a System for Multi-Layered Material Sculpting][slayer17],
-            (20) [gTangle: a Grammar for the Procedural Generation of Tangle Patterns][gtangle16],
-            (19) [State of the Art in Artistic Eediting of Appearance, Lighting, and Material][appeditstar16],
-            (18) [AppIm: Linear Spaces for Image-Based Appearance Editing][appim14],
-            (17) [How do People Edit Light Fields?][lfstudy14],
-            (16) [AppWarp: Retargeting Measured Materials by Appearance-Space Warping][appwarp11],
-            (15) [AppGen: Interactive Material Modeling from a Single Image][appgen11],
-            (14) [EnvyLight: An Interface for Editing Natural Illumination][envylight10],
-            (13) [Toward Evaluating Material Design Interface Paradigms for Novice Users][matstudy10],
-            (12) [BendyLights: Artistic Control of Direct Illumination by Curving Light Rays][bendylight10],
-            (11) [Visibility Editing For All-Frequency Shadow Design][scheat10],
-            (10) [User Controllable Color Transfer][ucct10],
-            (09) [Toward Evaluating Lighting Design Interface Paradigms for Novice Users][lightstudy09],
-            (08) [SubEdit: A Representation for Editing Measured Heterogeneous Subsurface Scattering][subedit09],
-            (07) [AppProp: All-Pairs Appearance-Space Edit Propagation][appprop08],
-            (06) [iCheat: A Representation for Artistic Control of Cinematic Realistic Lighting][icheat08],
-            (05) [AppWand: Editing Measured Materials using Appearance-Driven Optimization][appwand07],
-            (04) [Lighting by Paint][lpaint07],
-            (03) [A User Interface for Interactive Cinematic Shadow Design][shadowui02],
-            (02) [A Psychophysically-Based Model of Surface Gloss Perception][gloss01],
-            (01) [Toward a Psychophysically-based Light Reflection model for Image Synthesis][gloss00].
-            -->
-            <h3 id="analysis-and-support-of-design-workflows">Analysis
-            and Support of Design Workflows</h3>
-            <p>Content creation is the largest remaining bottleneck for
-            a ubiquitous use of synthetic imagery. My experience in
-            industry as well as academia is that, while many user
-            interfaces exist, little is known objectively about how well
-            these methods work in real-world usage and what are the
-            current bottlenecks that are left in designers’ workflows.
-            In this project, we are interested in understanding how
-            different users model a variety of shapes, materials, and
-            lighting, first individually and then in the context of
-            entire scenes.</p>
-            <!--
-            (8) [State of the Art in Artistic Eediting of Appearance, Lighting, and Material][appeditstar16],
-            (7) [3DFlow: Continuous Summarization of Mesh Editing Workflows][3dflow15],
-            (6) [How do People Edit Light Fields?][lfstudy14],
-            (5) [MeshGit: Diffing and Merging Meshes for Polygonal Modeling][meshgit13],
-            (4) [Toward Evaluating Progressive Rendering Methods in Appearance Design Tasks][renderstudy13],
-            (3) [MeshFlow: Interactive Visualization of Mesh Construction Sequences][meshflow11],
-            (2) [Toward Evaluating Material Design Interface Paradigms for Novice Users][matstudy10],
-            (1) [Toward Evaluating Lighting Design Interface Paradigms for Novice Users][lightstudy09].
-            -->
-            <h3 id="physical-appearance-reproduction">Physical
-            Appearance Reproduction</h3>
-            <p>Today printing methods can reproduce the color and shapes
-            of physical objects. This project investigates how to use
-            current printing hardware to reproduce a large variety of
-            material appearance for opaque and translucent objects.</p>
-            <!--
-            Related papers:
-            (4) [Bi-Scale Appearance Reproduction][fabaniso13],
-            (3) [Printing Spatially-Varying Reflectance for Reproducing HDR Images][hdrprint12],
-            (2) [Fabricating Spatially-Varying Subsurface Scattering][bssrdfprint10],
-            (1) [Printing Spatially-Varying Reflectancw][brdfprint09].
-            -->
-            <h3 id="efficient-rendering-of-complex-appearance">Efficient
-            rendering of complex appearance</h3>
-            <p>High-quality rendering of complex environments remains
-            problematic, especially when complex materials and lighting
-            are involved. I am interested in deriving scalable
-            algorithms for offline rendering of complex appearance in
-            environments with high geometric complexity. I believe these
-            developments will shed insights on how to derive interactive
-            scalable formulations on future machines. Some of these
-            algorithms can also be used to provide interactive feedback,
-            that is necessary for efficient appearance design. While for
-            simple scenes current algorithms serves us well, I am
-            particularly interested in guaranteeing interactivity while
-            designing materials and lighting in the globally-illuminated
-            high-complexity environments, which remains problematic for
-            typical applications in architectural, cinematic and game
-            lighting.</p>
-            <!--
-            Related papers:
-            (11) [ISHair: Importance Sampling for Hair Scattering Implementation][ishair12],
-            (10) [LightSlice: Matrix Slice Sampling for the Many-Lights Problem][lightslice11],
-            (09) [SafeGI: Type Checking to Improve Correctness in Rendering System Implementation][safegi10],
-            (08) [Fast, Realistic Lighting and Material Design using Nonlinear Cut Approximation][cuts08],
-            (07) [Tensor Clustering for Rendering Many-Light Animations][temporal08],
-            (06) [Matrix Row-Column Sampling for the Many-Light Problem][mxsmp07],
-            (05) [Direct-to-Indirect Transfer for Cinematic Relighting][dti06],
-            (04) [Lpics: a Hybrid Hardware-Accelerated Relighting Engine for Computer Cinematography][lpics05],
-            (03) [User-Configurable Automatic Shader Simplification][lod05],
-            (02) [A Hybrid Monte Carlo Method for Accurate and Efficient Subsurface Scattering][hybrid05],
-            (01) [Interactive Global Illumination in Dynamic Scenes][igids02].
-            -->
-            <h3
-            id="perceptual-metrics-for-rendering-algorithms-not-active">Perceptual
-            metrics for rendering algorithms (not active)</h3>
-            <p>The basic premise of appearance-based rendering is to
-            avoid computing details of an image that our eyes cannot
-            see. In the past, I have been interested in understanding
-            how perceptual metrics can be used in interactive
-            applications, instead of offline ones. To do so, I have
-            investigated a decision theoretic formulation of interactive
-            rendering, where perceptual metrics are used as priority
-            schemes.</p>
-            <!--
-            Related papers:
-            (3) [Perceptually-Driven Decision Theory for Interactive Realistic Rendering][decisiontheory03],
-            (2) [Functional Difference Predictors (FDPs): measuring meaningful image differences][fdp03],
-            (1) [Perceptually-based texture caching for hardware rendering][textures01].
-            -->
-            <h3
-            id="non-photorealistic-rendering-not-active">Non-photorealistic
-            rendering (not active)</h3>
-            <p>And finally, as most graphics people, I love artistic
-            renditions. As a side project, I developed a generalized
-            mosaicing algorithm that made the frontispiece for
-            siggraph.</p>
-            <!--
-            Related papers:
-            (1) [Jigsaw Image Mosaics][jim02].
-            -->
-            <h2 id="books">Books</h2>
-            <ul>
-            <li><img src="icons/fondamentibook16-icon.jpg"
-            alt="fondamentibook16-icon" /> F. Pellacini. <a
-            href="books/fondamentibook16/fondamentibook16.html"><em>Fondamenti
-            di Programmazione in Python</em>.</a> Apple iBook Store and
-            Amazon Kindle Store.</li>
-            </ul>
-            <h2 id="publications">Publications</h2>
-            <h3
-            id="leading-journal-articles-siggraph-tog-pami-tvcg">Leading
-            Journal Articles: SIGGRAPH, TOG, PAMI, TVCG</h3>
-            <ul>
-            <li><img src="icons/boolsurf22-icon.jpg"
-            alt="boolsurf22-icon" /> [S40] M. Riso, G. Nazzaro, E.
-            Puppo, A. Jacobson, Q. Zhou, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/boolsurf22/boolsurf22-paper.pdf"><em>BoolSurf
-            : Boolean Operations on Surfaces</em>.</a> ACM Transactions
-            on Graphics (SIGGRAPH Asia 2022), 2022. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/boolsurf22/boolsurf22-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/boolsurf22/boolsurf22-video.mp4">video</a>.</li>
-            <li><img src="icons/fastbool22-icon.jpg"
-            alt="fastbool22-icon" /> [S39] G. Cherchi, F. Pellacini, M.
-            Attene, M. Livesu. <a
-            href="http://pellacini.di.uniroma1.it/publications/fastbool22/fastbool22-paper.pdf"><em>Interactive
-            and Robust Mesh Booleans</em>.</a> ACM Transaction on
-            Graphics (SIGGRAPH Asia 2022), 2022. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/fastbool22/fastbool22-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/fastbool22/fastbool22-video.mp4">video</a>,
-            <a
-            href="https://www.youtube.com/watch?v=9fo7ApTrXdw">youtube</a>.</li>
-            <li><img src="icons/bsurf22-icon.jpg" alt="bsurf22-icon" />
-            [S38] C. Mancinelli, G. Nazzaro, F. Pellacini, E. Puppo. <a
-            href="http://pellacini.di.uniroma1.it/publications/bsurf22/bsurf22-paper.pdf"><em>b/Surf:
-            Interactive Bèzier Splines on Surface Meshes</em>.</a> IEEE
-            Transactions on Visualization and Computer Graphics, 2022.
-            Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/bsurf22/bsurf22-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/bsurf22/bsurf22-video.mp4">video</a>.</li>
-            <li><img src="icons/geotangle22-icon.jpg"
-            alt="geotangle22-icon" /> [S37] G. Nazzaro, E. Puppo, F.
-            Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/geotangle22/geotangle22-paper.pdf"><em>GeoTangle:
-            Interactive Design of Geodesic Tangle Patterns on
-            Surfaces</em>.</a> ACM Transaction on Graphics, 2022. Links:
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/geotangle22/geotangle22-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/geotangle22/geotangle22-video.mp4">video</a>.</li>
-            <li><img src="icons/pavel22-icon.jpg" alt="pavel22-icon" />
-            [S36] F. A. Fanni, F. Pellacini, R. Scateni, A. Giachetti.
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/pavel22/pavel22-paper.pdf"><em>Pavel:
-            Decorative Patterns with Packed Volumetric
-            Elements</em>.</a> ACM Transaction on Graphics, 2022. Links:
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/pavel22/pavel22-paper.pdf">paper</a>.</li>
-            <li><img src="icons/scenegit19-icon.jpg"
-            alt="scenegit19-icon" /> [S35] E. Carra, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/scenegit19/scenegit19-paper.pdf"><em>SceneGit:
-            a Practical System for Diffing and Merging 3D
-            Environments</em>.</a> ACM Transaction on Graphics (SIGGRAPH
-            Asia 2019), 2019. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/scenegit19/scenegit19-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/scenegit19/scenegit19-supplemental.zip">supplemental</a>.</li>
-            <li><img src="icons/gtangle16-icon.jpg"
-            alt="gtangle16-icon" /> [S34] C. Santoni, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/gtangle16/gtangle16-paper.pdf"><em>gTangle:
-            a Grammar for the Procedural Generation of Tangle
-            Patterns</em>.</a> ACM Transaction on Graphics (SIGGRAPH
-            Asia 2016), 2016. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/gtangle16/gtangle16-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/gtangle16/gtangle16-video.mp4">video</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/gtangle16/gtangle16-supplemental.zip">supplemental</a>.</li>
-            <li><img src="icons/vivace16-icon.jpg"
-            alt="vivace16-icon" /> [S33] M. Fratarcangeli, V, Tibaldo,
-            F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/vivace16/vivace16-paper.pdf"><em>Vivace:
-            a Practical Gauss-Seidel Method for Stable Soft Body
-            Dynamics</em>.</a> ACM Transaction on Graphics (SIGGRAPH
-            Asia 2016), 2016. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/vivace16/vivace16-paper.pdf">paper</a>,
-            <a href="https://youtu.be/vkBIQ4LOhGk">youtube</a>, <a
-            href="http://pellacini.di.uniroma1.it/publications/vivace16/vivace16-video.mp4">video</a>.</li>
-            <li><img src="icons/csculpt16-icon.jpg"
-            alt="csculpt16-icon" /> [S32] C. Calabrese, G. Salvati, M.
-            Tarini, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/csculpt16/csculpt16-paper.pdf"><em>cSculpt:
-            A System for Collaborative Sculpting</em>.</a> ACM
-            Transaction on Graphics (SIGGRAPH 2016), 2016. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/csculpt16/csculpt16-paper.pdf">paper</a>,
-            <a href="https://youtu.be/H--1zSkarhk">youtube</a>, <a
-            href="http://pellacini.di.uniroma1.it/publications/csculpt16/csculpt16-video.mp4">video</a>.</li>
-            <li><img src="icons/meshhisto15-icon.jpg"
-            alt="meshhisto15-icon" /> [S31] G. Salvati, C. Santoni, V.
-            Tibaldo, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/meshhisto15/meshhisto15-paper.pdf"><em>MeshHisto:
-            Collaborative Modeling by Sharing and Retargeting Editing
-            Histories</em>.</a> ACM Transaction on Graphics (SIGGRAPH
-            Asia 2015), 2015. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/meshhisto15/meshhisto15-paper.pdf">paper</a>,
-            <a href="https://youtu.be/-XCRTsCBQ4Y">youtube</a>, <a
-            href="http://pellacini.di.uniroma1.it/publications/meshhisto15/meshhisto15-video.mp4">video</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/meshhisto15/meshhisto15-supplemental.zip">supplemental</a>.</li>
-            <li><img src="icons/3dflow15-icon.jpg"
-            alt="3dflow15-icon" /> [S30] J. Denning, V. Tibaldo, F.
-            Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/3dflow15/3dflow15-paper.pdf"><em>3DFlow:
-            Continuous Summarization of Mesh Editing Workflows</em>.</a>
-            ACM Transaction on Graphics (SIGGRAPH 2015), 2015. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/3dflow15/3dflow15-paper.pdf">paper</a>,
-            <a href="https://youtu.be/2nNbc-mq2to">youtube</a>, <a
-            href="http://pellacini.di.uniroma1.it/publications/3dflow15/3dflow15-video.mp4">video</a>.</li>
-            <li><img src="icons/greta15-icon.jpg" alt="greta15-icon" />
-            [S29] A. Attanasi, A. Cavagna, L. Del Castello, I. Giardina,
-            A. Jelic, S. Melillo, L. Parisi, F. Pellacini, E. Shen, E.
-            Silvestri, M. Viale. <a
-            href="http://pellacini.di.uniroma1.it/publications/greta15/greta15-paper.pdf"><em>Greta:
-            A Novel Global and Recursive Tracking Algorithm in Three
-            Dimensions</em>.</a> IEEE Transactions on Pattern Analysis
-            and Machine Intelligence, 2015. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/greta15/greta15-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/greta15/greta15-supplemental.zip">supplemental</a>.</li>
-            <li><img src="icons/appim14-icon.jpg" alt="appim14-icon" />
-            [S28] F. Di Renzo, C. Calabrese, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/appim14/appim14-paper.pdf"><em>AppIm:
-            Linear Spaces for Image-based Appearance Editing</em>.</a>
-            ACM Transactions on Graphics (SIGGRAPH Asia 2014), 2014.
-            Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/appim14/appim14-paper.pdf">paper</a>,
-            <a href="https://youtu.be/KlGsSKZVkok">youtube</a>, <a
-            href="http://pellacini.di.uniroma1.it/publications/appim14/appim14-video.mp4">video</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/appim14/appim14-supplemental.zip">supplemental</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/appim14/appim14-talk.pdf">talk</a>.</li>
-            <li><img src="icons/lfstudy14-icon.jpg"
-            alt="lfstudy14-icon" /> [S27] A. Jarabo, B. Masia, A.
-            Bousseau, F. Pellacini, D. Gutierrez. <a
-            href="http://pellacini.di.uniroma1.it/publications/lfstudy14/lfstudy14-paper.pdf"><em>How
-            Do People Edit Light Fields?</em>.</a> ACM Transactions on
-            Graphics (SIGGRAPH 2014), 2014. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/lfstudy14/lfstudy14-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/lfstudy14/lfstudy14-video.mp4">video</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/lfstudy14/lfstudy14-supplemental.zip">supplemental</a>.</li>
-            <li><img src="icons/meshgit13-icon.jpg"
-            alt="meshgit13-icon" /> [S26] J. Denning, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/meshgit13/meshgit13-paper.pdf"><em>MeshGit:
-            Diffing and Merging Meshes for Polygonal Modeling</em>.</a>
-            ACM Transactions on Graphics (SIGGRAPH 2013), 2013. Links:
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/meshgit13/meshgit13-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/appim14/appim14-talk.pdf">talk</a>.</li>
-            <li><img src="icons/fabaniso13-icon.jpg"
-            alt="fabaniso13-icon" /> [S25] Y. Lan, Y. Dong, F.
-            Pellacini, X. Tong. <a
-            href="http://pellacini.di.uniroma1.it/publications/fabaniso13/fabaniso13-paper.pdf"><em>Bi-Scale
-            Appearance Fabrication</em>.</a> ACM Transactions on
-            Graphics (SIGGRAPH 2013), 2013. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/fabaniso13/fabaniso13-paper.pdf">paper</a>,
-            <a href="https://youtu.be/RcJ2JmzylYI">youtube</a>, <a
-            href="http://pellacini.di.uniroma1.it/publications/fabaniso13/fabaniso13-video.mp4">video</a>.</li>
-            <li><img src="icons/hdrprint12-icon.jpg"
-            alt="hdrprint12-icon" /> [S24] Y. Dong, X. Tong, F.
-            Pellacini, B. Guo. <a
-            href="http://pellacini.di.uniroma1.it/publications/hdrprint12/hdrprint12-paper.pdf"><em>Printing
-            Spatially Varying Reflectance for Reproducing HDR
-            Images</em>.</a> ACM Transactions on Graphics (SIGGRAPH
-            2012), 2012. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/hdrprint12/hdrprint12-paper.pdf">paper</a>,
-            <a href="https://youtu.be/Od86H4cPI_o">youtube</a>, <a
-            href="http://pellacini.di.uniroma1.it/publications/hdrprint12/hdrprint12-video.mp4">video</a>.</li>
-            <li><img src="icons/lightslice11-icon.jpg"
-            alt="lightslice11-icon" /> [S23] J. Ou, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/lightslice11/lightslice11-paper.pdf"><em>LightSlice:
-            Matrix Slice Sampling for the Many-Lights Problem</em>.</a>
-            ACM Transactions on Graphics (SIGGRAPH Asia 2011), 2011.
-            Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/lightslice11/lightslice11-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/lightslice11/lightslice11-talk.pdf">talk</a>.</li>
-            <li><img src="icons/appwarp11-icon.jpg"
-            alt="appwarp11-icon" /> [S22] X. An, X. Tong, J. D. Denning,
-            F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/appwarp11/appwarp11-paper.pdf"><em>AppWarp:
-            Retargeting Measured Materials by Appearance-Space
-            Warping</em>.</a> ACM Transactions on Graphics (SIGGRAPH
-            Asia 2011), 2011. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/appwarp11/appwarp11-paper.pdf">paper</a>,
-            <a href="https://youtu.be/ta1L24qhVD8">youtube</a>, <a
-            href="http://pellacini.di.uniroma1.it/publications/appwarp11/appwarp11-video.mp4">video</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/appwarp11/appwarp11-supplemental.zip">supplemental</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/appwarp11/appwarp11-talk.pdf">talk</a>.</li>
-            <li><img src="icons/appgen11-icon.jpg"
-            alt="appgen11-icon" /> [S21] Y. Dong, X. Tong, F. Pellacini,
-            B. Guo. <a
-            href="http://pellacini.di.uniroma1.it/publications/appgen11/appgen11-paper.pdf"><em>AppGen:
-            Interactive Material Modeling from a Single Image</em>.</a>
-            ACM Transactions on Graphics (SIGGRAPH Asia 2011), 2011.
-            Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/appgen11/appgen11-paper.pdf">paper</a>,
-            <a href="https://youtu.be/SB-zvgeCeow">youtube</a>, <a
-            href="http://pellacini.di.uniroma1.it/publications/appgen11/appgen11-video.mp4">video</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/appgen11/appgen11-supplemental.zip">supplemental</a>.</li>
-            <li><img src="icons/meshflow11-icon.jpg"
-            alt="meshflow11-icon" /> [S20] J. Denning, W. B. Kerr, F.
-            Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/meshflow11/meshflow11-paper.pdf"><em>MeshFlow:
-            Interactive Visualization of Mesh Construction
-            Sequences</em>.</a> ACM Transactions on Graphics (SIGGRAPH
-            2011), 2011. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/meshflow11/meshflow11-paper.pdf">paper</a>,
-            <a href="https://youtu.be/0c3ouqKs4b4">youtube</a>, <a
-            href="http://pellacini.di.uniroma1.it/publications/meshflow11/meshflow11-video.mp4">video</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/meshflow11/meshflow11-supplemental.zip">supplemental</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/meshflow11/meshflow11-talk.pdf">talk</a>.</li>
-            <li><img src="icons/envylight10-icon.jpg"
-            alt="envylight10-icon" /> [S19] F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/envylight10/envylight10-paper.pdf"><em>EnvyLight:
-            An Interface for Editing Natural Illumination</em>.</a> ACM
-            Transactions on Graphics (SIGGRAPH 2010), 2010. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/envylight10/envylight10-paper.pdf">paper</a>,
-            <a href="https://youtu.be/HI2DjiYMSkg">youtube</a>, <a
-            href="http://pellacini.di.uniroma1.it/publications/envylight10/envylight10-video.mp4">video</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/envylight10/envylight10-supplemental.zip">supplemental</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/envylight10/envylight10-talk.pdf">talk</a>.</li>
-            <li><img src="icons/matstudy10-icon.jpg"
-            alt="matstudy10-icon" /> [S18] W. B. Kerr, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/matstudy10/matstudy10-paper.pdf"><em>Toward
-            Evaluating Material Design Interface Paradigms for Novice
-            Users</em>.</a> ACM Transactions on Graphics (SIGGRAPH
-            2010), 2010. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/matstudy10/matstudy10-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/matstudy10/matstudy10-supplemental.zip">supplemental</a>.</li>
-            <li><img src="icons/bssrdfprint10-icon.jpg"
-            alt="bssrdfprint10-icon" /> [S17] Y. Dong, J. Wang, F.
-            Pellacini, X. Tong, B. Guo. <a
-            href="http://pellacini.di.uniroma1.it/publications/bssrdfprint10/bssrdfprint10-paper.pdf"><em>Fabricating
-            Spatially-Varying Subsurface Scattering</em>.</a> ACM
-            Transactions on Graphics (SIGGRAPH 2010), 2010. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/bssrdfprint10/bssrdfprint10-paper.pdf">paper</a>,
-            <a href="https://youtu.be/D-GGtmBA0iw">youtube</a>, <a
-            href="http://pellacini.di.uniroma1.it/publications/bssrdfprint10/bssrdfprint10-video.mp4">video</a>.</li>
-            <li><img src="icons/brdfprint09-icon.jpg"
-            alt="brdfprint09-icon" /> [S16] W. Matusik, B. Ajdin, J. Gu,
-            J. Lawrence, H. Lensch, F. Pellacini, S. Rusinkiewicz. <a
-            href="http://pellacini.di.uniroma1.it/publications/brdfprint09/brdfprint09-paper.pdf"><em>Printing
-            Spatially-Varying Reflectance</em>.</a> ACM Transactions on
-            Graphics (SIGGRAPH Asia 2009), 2009. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/brdfprint09/brdfprint09-paper.pdf">paper</a>.</li>
-            <li><img src="icons/lightstudy09-icon.jpg"
-            alt="lightstudy09-icon" /> [S15] W. Kerr, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/lightstudy09/lightstudy09-paper.pdf"><em>Toward
-            Evaluating Lighting Design Interface Paradigms for Novice
-            Users</em>.</a> ACM Transactions on Graphics (SIGGRAPH
-            2009), 2009. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/lightstudy09/lightstudy09-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/lightstudy09/lightstudy09-supplemental.zip">supplemental</a>.</li>
-            <li><img src="icons/subedit09-icon.jpg"
-            alt="subedit09-icon" /> [S14] Y. Song, X. Tong, F.
-            Pellacini, P. Peers. <a
-            href="http://pellacini.di.uniroma1.it/publications/subedit09/subedit09-paper.pdf"><em>SubEdit:
-            A Representation for Editing Measured Heterogeneous
-            Subsurface Scattering</em>.</a> ACM Transactions on Graphics
-            (SIGGRAPH 2009), 2009. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/subedit09/subedit09-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/subedit09/subedit09-video.mp4">video</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/subedit09/subedit09-supplemental.zip">supplemental</a>.</li>
-            <li><img src="icons/cuts08-icon.jpg" alt="cuts08-icon" />
-            [S13] E. Cheslack-Postava, R. Wang, O. Akerlund, F.
-            Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/cuts08/cuts08-paper.pdf"><em>Fast,
-            Realistic Lighting and Material Design using Nonlinear Cut
-            Approximation</em>.</a> ACM Transactions on Graphics
-            (SIGGRAPH Asia 2008), 2008. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/cuts08/cuts08-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/cuts08/cuts08-video.mp4">video</a>.</li>
-            <li><img src="icons/appprop08-icon.jpg"
-            alt="appprop08-icon" /> [S12] X. An, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/appprop08/appprop08-paper.pdf"><em>AppProp:
-            All-Pairs Appearance-Space Edit Propagation</em>.</a> ACM
-            Transactions on Graphics (SIGGRAPH 2008), 2008. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/appprop08/appprop08-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/appprop08/appprop08-video.mp4">video</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/appprop08/appprop08-supplemental.zip">supplemental</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/appprop08/appprop08-talk.pdf">talk</a>.</li>
-            <li><img src="icons/appwand07-icon.jpg"
-            alt="appwand07-icon" /> [S11] F. Pellacini, J. Lawrence. <a
-            href="http://pellacini.di.uniroma1.it/publications/appwand07/appwand07-paper.pdf"><em>AppWand:
-            Editing Measured Materials using Appearance-Driven
-            Optimization</em>.</a> ACM Transactions on Graphics
-            (SIGGRAPH 2007), 2007. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/appwand07/appwand07-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/appwand07/appwand07-video.mp4">video</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/appwand07/appwand07-talk.pdf">talk</a>.</li>
-            <li><img src="icons/mxsmp07-icon.jpg" alt="mxsmp07-icon" />
-            [S10] M. Hasan, F. Pellacini, K. Bala. <a
-            href="http://pellacini.di.uniroma1.it/publications/mxsmp07/mxsmp07-paper.pdf"><em>Matrix
-            Row-Column Sampling for the Many Light Problem</em>.</a> ACM
-            Transactions on Graphics (SIGGRAPH 2007), 2007. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/mxsmp07/mxsmp07-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/mxsmp07/mxsmp07-talk.pdf">talk</a>.</li>
-            <li><img src="icons/lpaint07-icon.jpg"
-            alt="lpaint07-icon" /> [S09] F. Pellacini, F. Battaglia, K.
-            Morley, A. Finkelstein. <a
-            href="http://pellacini.di.uniroma1.it/publications/lpaint07/lpaint07-paper.pdf"><em>Lighting
-            with Paint</em>.</a> ACM Transactions on Graphics, 2007.
-            Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/lpaint07/lpaint07-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/lpaint07/lpaint07-video.mp4">video</a>.</li>
-            <li><img src="icons/dti06-icon.jpg" alt="dti06-icon" />
-            [S08] M. Hasan, F. Pellacini, K. Bala. <a
-            href="http://pellacini.di.uniroma1.it/publications/dti06/dti06-paper.pdf"><em>Direct-to-Indirect
-            Transfer for Cinematic Relighting</em>.</a> ACM Transactions
-            on Graphics (SIGGRAPH 2006), 2006. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/dti06/dti06-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/dti06/dti06-video.mp4">video</a><a
-            href="http://pellacini.di.uniroma1.it/publications/dti06/dti06-talk.pdf">talk</a>.</li>
-            <li><img src="icons/lod05-icon.jpg" alt="lod05-icon" />
-            [S07] F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/lod05/lod05-paper.pdf"><em>User-Configurable
-            Automatic Shader Simplification</em>.</a> ACM Transactions
-            on Graphics (SIGGRAPH 2005), 2005. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/lod05/lod05-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/lod05/lod05-talk.pdf">talk</a>.</li>
-            <li><img src="icons/lpics05-icon.jpg" alt="lpics05-icon" />
-            [S06] F. Pellacini, K. Vidimce, A. Lefohn, A. Mohr, M.
-            Leone, J. Warren. <a
-            href="http://pellacini.di.uniroma1.it/publications/lpics05/lpics05-paper.pdf"><em>Lpics:
-            a Hybrid Hardware-Accelerated Relighting Engine for Computer
-            Cinematography</em>.</a> ACM Transactions on Graphics
-            (SIGGRAPH 2005), 2005. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/lpics05/lpics05-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/lpics05/lpics05-video.mp4">video</a>.</li>
-            <li><img src="icons/decisiontheory03-icon.jpg"
-            alt="decisiontheory03-icon" /> [S05] R. Dumont, F.
-            Pellacini, J. Ferwerda. <a
-            href="http://pellacini.di.uniroma1.it/publications/decisiontheory03/decisiontheory03-paper.pdf"><em>Perceptually-Driven
-            Decision Theory for Interactive Realistic
-            Rendering</em>.</a> ACM Transactions on Graphics, 2003.
-            Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/decisiontheory03/decisiontheory03-paper.pdf">paper</a>.</li>
-            <li><img src="icons/shadowui02-icon.jpg"
-            alt="shadowui02-icon" /> [S04] F. Pellacini, P. Tole, D.
-            Greenberg. <a
-            href="http://pellacini.di.uniroma1.it/publications/shadowui02/shadowui02-paper.pdf"><em>A
-            User Interface for Interactive Cinematic Shadow
-            Design</em>.</a> ACM Transactions on Graphics (SIGGRAPH
-            2002), 2002. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/shadowui02/shadowui02-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/shadowui02/shadowui02-talk.pdf">talk</a>.</li>
-            <li><img src="icons/igids02-icon.jpg" alt="igids02-icon" />
-            [S03] P. Tole, F. Pellacini, B. Walter, D. Greenberg. <a
-            href="http://pellacini.di.uniroma1.it/publications/igids02/igids02-paper.pdf"><em>Interactive
-            Global Illumination in Dynamic Scenes</em>.</a> ACM
-            Transactions on Graphics (SIGGRAPH 2002), 2002. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/igids02/igids02-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/igids02/igids02-video.mp4">video</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/igids02/igids02-talk.pdf">talk</a>.</li>
-            <li><img src="icons/jim02-icon.jpg" alt="jim02-icon" />
-            [S02] J. Kim, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/jim02/jim02-paper.pdf"><em>Jigsaw
-            Image Mosaics</em>.</a> ACM Transactions on Graphics
-            (SIGGRAPH 2002), 2002. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/jim02/jim02-paper.pdf">paper</a>.</li>
-            <li><img src="icons/gloss00-icon.jpg" alt="gloss00-icon" />
-            [S01] F. Pellacini, J. Ferwerda, D. Greenberg. <a
-            href="http://pellacini.di.uniroma1.it/publications/gloss00/gloss00-paper.pdf"><em>Toward
-            a Psychophysically-based Light Reflection model for Image
-            Synthesis</em>.</a> SIGGRAPH 2000, 2000. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/gloss00/gloss00-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/gloss00/gloss00-talk.pdf">talk</a>.</li>
-            </ul>
-            <h2 id="journals">Journals</h2>
-            <ul>
-            <li><img src="icons/pop22-icon.jpg" alt="pop22-icon" />
-            [J19] M. Riso, D. Sforza, F. Pellacini <a
-            href="http://pellacini.di.uniroma1.it/publications/pop22/pop22-paper.pdf"><em>pOp:
-            Parameter Optimization of Differentiable Vector
-            Patterns</em></a>. Computer Graphics Forum, 4 (41), 2022.
-            Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/pop22/pop22-paper.pdf">paper</a>.</li>
-            <li><img src="icons/nrti20-icon.jpg" alt="nrti20-icon" />
-            [J18] T. G. Dulecha, F. A. Fanni, F. Ponchio, F. Pellacini,
-            A. Giachetti <a
-            href="http://pellacini.di.uniroma1.it/publications/nrti20/nrti20-paper.pdf"><em>Neural
-            reflectance transformation imaging</em></a>. The Visual
-            Computer, 36 (10), 2161–2174, 2020. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/nrti20/nrti20-paper.pdf">paper</a>.</li>
-            <li><img src="icons/gmotion19-icon.jpg"
-            alt="gmotion19-icon" /> [J17] E Carra, C. Santoni, F.
-            Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/gmotion19/gmotion19-paper.pdf"><em>Grammar-based
-            procedural animations for motion graphics</em>.</a>
-            Computers &amp; Graphics, 2019. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/gmotion19/gmotion19-paper.pdf">paper</a>,
-            <a href="https://youtu.be/q8-fYvaKFNQ">youtube</a>, <a
-            href="http://pellacini.di.uniroma1.it/publications/gmotion19/gmotion19-video.mp4">video</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/gmotion19/gmotion19-supplemental.zip">supplemental</a>.</li>
-            <li><img src="icons/levelmerge16-icon.jpg"
-            alt="levelmerge16-icon" /> [J16] C. Santoni, G. Salvati, V.
-            Tibaldo, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/levelmerge16/levelmerge16-paper.pdf"><em>LevelMerge:
-            Collaborative Game Level Editing by Merging Labeled
-            Graphs</em>.</a> IEEE CG&amp;A, 2016. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/levelmerge16/levelmerge16-paper.pdf">paper</a>,
-            <a href="https://youtu.be/IhWp_OzCQTU">youtube</a>, <a
-            href="http://pellacini.di.uniroma1.it/publications/levelmerge16/levelmerge16-video.mp4">video</a>.</li>
-            <li><img src="icons/appeditstar16-icon.jpg"
-            alt="appeditstar16-icon" /> [J15] T.-W. Schmidt, F.
-            Pellacini, D. Nowrouzezahrai, W. Jarosz, C. Dachsbacher. <a
-            href="http://pellacini.di.uniroma1.it/publications/appeditstar16/appeditstar16-paper.pdf"><em>State
-            of the Art in Artistic Editing of Appearance, Lighting, and
-            Material</em>.</a> Computer Graphics Forum, 2016. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/appeditstar16/appeditstar16-paper.pdf">paper</a>.</li>
-            <li><img src="icons/ppbd15-icon.jpg" alt="ppbd15-icon" />
-            [J14] M. Fratarcangeli, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/ppbd15/ppbd15-paper.pdf"><em>Scalable
-            Partitioning for Parallel Position Based Dynamics</em>.</a>
-            Computer Graphics Forum (Eurographics), 2015. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/ppbd15/ppbd15-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/ppbd15/ppbd15-video.mp4">video</a>.</li>
-            <li><img src="icons/ppbd15-icon.jpg" alt="ppbd15-icon" />
-            [J13] M. Fratarcangeli, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/ppbd14/ppbd14-paper.pdf"><em>A
-            GPU-Based Implementation of Position-Based Dynamics got
-            Interactive Deformable Bodies</em>.</a> Journal of Graphics
-            Tools (extended version of SIGGRAD 2014), 2015. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/ppbd14/ppbd14-paper.pdf">paper</a>.</li>
-            <li><img src="icons/giui14-icon.jpg" alt="giui14-icon" />
-            [J12] O. Karlík, M. Růžička, V. Gassenbauer, F. Pellacini,
-            J. Křivánek. <a
-            href="http://pellacini.di.uniroma1.it/publications/giui14/giui14-paper.pdf"><em>Toward
-            Evaluating the Usefulness of Global Illumination for Novices
-            in Lighting Design Tasks</em>.</a> IEEE Transactions on
-            Visualization and Computer Graphics, 2014. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/giui14/giui14-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/giui14/giui14-video.mp4">video</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/giui14/giui14-supplemental.zip">supplemental</a>.</li>
-            <li><img src="icons/envydepth13-icon.jpg"
-            alt="envydepth13-icon" /> [J11] F. Banterle, M. Callieri, M.
-            Dellepiane, M. Corsini, F. Pellacini, R. Scopigno. <a
-            href="http://pellacini.di.uniroma1.it/publications/envydepth13/envydepth13-paper.pdf"><em>EnvyDepth:
-            An Interface for Recovering Local Natural Illumination from
-            Environment Maps</em>.</a> Computer Graphics Forum
-            (Eurographics), 2013. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/envydepth13/envydepth13-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/envydepth13/envydepth13-supplemental.zip">supplemental</a>.</li>
-            <li><img src="icons/renderstudy13-icon.jpg"
-            alt="renderstudy13-icon" /> [J10] J. Ou, O. Karlik, J.
-            Krivanek, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/renderstudy13/renderstudy13-paper.pdf"><em>Evaluating
-            Progressive Rendering Methods in Appearance Design
-            Tasks</em>.</a> IEEE Computer Graphics and Applications,
-            2013. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/renderstudy13/renderstudy13-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/renderstudy13/renderstudy13-video.mp4">video</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/renderstudy13/renderstudy13-supplemental.zip">supplemental</a>.</li>
-            <li><img src="icons/ishair12-icon.jpg"
-            alt="ishair12-icon" /> [J09] J. Ou, F Xie, P.
-            Krishnamachari, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/ishair12/ishair12-paper.pdf"><em>ISHair:
-            Importance Sampling for Hair Scattering</em>.</a> Computer
-            Graphics Forum (EGRS 2012), 2012. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/ishair12/ishair12-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/ishair12/ishair12-video.mp4">video</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/ishair12/ishair12-supplemental.zip">supplemental</a>.</li>
-            <li><img src="icons/ucct10-icon.jpg" alt="ucct10-icon" />
-            [J08] X. An, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/ucct10/ucct10-paper.pdf"><em>User
-            Controllable Color Transfer</em>.</a> Computer Graphics
-            Forum (EG 2010), 2010. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/ucct10/ucct10-paper.pdf">paper</a>.</li>
-            <li><img src="icons/safegi10-icon.jpg"
-            alt="safegi10-icon" /> [J07] J. Ou, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/safegi10/safegi10-paper.pdf"><em>SafeGI:
-            Type Checking to Improve Correctness in Rendering System
-            Implementation</em>.</a> Computer Graphics Forum (EGSR
-            2010), 2010. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/safegi10/safegi10-paper.pdf">paper</a>.</li>
-            <li><img src="icons/bendylight10-icon.jpg"
-            alt="bendylight10-icon" /> [J06] W. B. Kerr, F. Pellacini,
-            J. Denning. <a
-            href="http://pellacini.di.uniroma1.it/publications/bendylight10/bendylight10-paper.pdf"><em>BendyLights:
-            Artistic Control of Direct Illumination by Curving Light
-            Rays</em>.</a> Computer Graphics Forum (EGSR), 2010. Links:
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/bendylight10/bendylight10-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/bendylight10/bendylight10-video.mp4">video</a>.</li>
-            <li><img src="icons/scheat10-icon.jpg"
-            alt="scheat10-icon" /> [J06] J. Obert, F. Pellacini, S.
-            Pattanaik. <a
-            href="http://pellacini.di.uniroma1.it/publications/scheat10/scheat10-paper.pdf"><em>Visibility
-            Editing For All-Frequency Shadow Design</em>.</a> Computer
-            Graphics Forum (EGSR 2010), 2010. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/scheat10/scheat10-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/scheat10/scheat10-video.mp4">video</a>.</li>
-            <li><img src="icons/temporal08-icon.jpg"
-            alt="temporal08-icon" /> [J04] M. Hasan, E.
-            Velazquez-Armendariz, F. Pellacini, K. Bala. <a
-            href="http://pellacini.di.uniroma1.it/publications/temporal08/temporal08-paper.pdf"><em>Tensor
-            Clustering for Rendering Many-Light Animations</em>.</a>
-            Computer Graphics Forum (EGSR 2008), 2008. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/temporal08/temporal08-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/temporal08/temporal08-video.mp4">video</a>
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/temporal08/temporal08-talk.pdf">talk</a>.</li>
-            <li><img src="icons/icheat08-icon.jpg"
-            alt="icheat08-icon" /> [J03] J. Obert, J. Krivanec, F.
-            Pellacini, D. Sykora, S. Pattanaik. <a
-            href="http://pellacini.di.uniroma1.it/publications/icheat08/icheat08-paper.pdf"><em>iCheat:
-            A Representation for Artistic Control of Indirect Cinematic
-            Lighting</em>.</a> Computer Graphics Forum (EGSR 2008),
-            2008. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/icheat08/icheat08-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/icheat08/icheat08-talk.pdf">talk</a>.</li>
-            <li><img src="icons/eyetrack08-icon.jpg"
-            alt="eyetrack08-icon" /> [J02] L. Lorigo, M. Haridasan, H.
-            BrynjarsdÑttir, L. Xia, L. Granka, F. Pellacini, B. Pan, T.
-            Joachims, G. Gay. <a
-            href="http://pellacini.di.uniroma1.it/publications/eyetrack08/eyetrack08-paper.pdf"><em>Eye
-            Tracking and Online Search: Lessons Learned and Challenges
-            Ahead</em>.</a> Journal of the American Society for
-            Information Science and Technology (JASIST), 2008. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/eyetrack08/eyetrack08-paper.pdf">paper</a>.</li>
-            <li><img src="icons/collabvis07-icon.jpg"
-            alt="collabvis07-icon" /> [J01] L. Lorigo, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/collabvis07/collabvis07-paper.pdf"><em>Frequency
-            and Structure of Long Distance Scholarly Collaborations in a
-            Physics Community</em>.</a> Journal of the American Society
-            for Information Science and Technology (JASIST), 2007.
-            Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/collabvis07/collabvis07-paper.pdf">paper</a>.</li>
-            </ul>
-            <h3 id="conferences">Conferences</h3>
-            <ul>
-            <li><img src="icons/xrcockpit20-icon.jpg"
-            alt="xrcockpit20-icon" /> [C14] F. M. Caputo, S. Jacota, S.
-            Krayevskyy, M. Pesavento, F. Pellacini, A. Giachetti. <a
-            href="http://pellacini.di.uniroma1.it/publications/xrcockpit20/xrcockpit20-paper.pdf"><em>XR-Cockpit:
-            a comparison of VR and AR solutions on an interactive
-            training station</em></a>. In ETFA, 2020.</li>
-            <li><img src="icons/yoctogl19-icon.jpg"
-            alt="yoctogl19-icon" /> [C13] G. Nazzaro, E. Carra, F.
-            Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/yoctogl19/yoctogl19-paper.pdf"><em>Yocto/GL:
-            A Data-Oriented Library for Physically-Based
-            Graphics</em></a>. In STAG, 2019. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/yoctogl19/yoctogl19-paper.pdf">paper</a>.</li>
-            <li><img src="icons/textons19-icon.jpg"
-            alt="textons19-icon" /> [C12] C. Joppi, M. Godi, A.
-            Giachetti, F. Pellacini, M. Cristani. <a
-            href="http://pellacini.di.uniroma1.it/publications/textons19/textons19-paper.pdf"><em>Texture
-            Retrieval in the Wild Through Detection-Based
-            Attributes</em>.</a> ICIAP, 2019. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/textons19/textons19-paper.pdf">paper</a>.</li>
-            <li><img src="icons/texelatt19-icon.jpg"
-            alt="texelatt19-icon" /> [C11] M. Godi, C. Joppi, A.
-            Giachetti, F. Pellacini, M. Cristani. <a
-            href="http://pellacini.di.uniroma1.it/publications/texelatt19/texelatt19-paper.pdf"><em>Texel-Att:
-            Representing and Classifying Element-based Textures by
-            Attributes</em>.</a> BMVC, 2019. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/texelatt19/texelatt19-paper.pdf">paper</a>.</li>
-            <li><img src="icons/gmotion18-icon.jpg"
-            alt="gmotion18-icon" /> [C10] E. Carra, C. Santoni, F.
-            Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/gmotion18/gmotion18-paper.pdf"><em>gMotion:
-            A Spatio-Temporal Grammar for the Procedural Generation of
-            Motion Graphics</em>.</a> GI, 2019. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/gmotion18/gmotion18-paper.pdf">paper</a>,
-            <a href="https://youtu.be/q8-fYvaKFNQ">youtube</a>, <a
-            href="http://pellacini.di.uniroma1.it/publications/gmotion18/gmotion18-video.mp4">video</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/gmotion18/gmotion18-supplemental.zip">supplemental</a>.</li>
-            <li><img src="icons/slayer17-icon.jpg"
-            alt="slayer17-icon" /> [C09] C. Calabrese, M. Fratarcangeli,
-            F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/slayer17/slayer17-paper.pdf"><em>sLayer:
-            a System for Multi-Layered Material Sculpting</em>.</a>
-            EGSR, EI&amp;I Track, 2017. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/slayer17/slayer17-paper.pdf">paper</a>,
-            <a href="https://youtu.be/OIZ3fy-BWhs">youtube</a>, <a
-            href="http://pellacini.di.uniroma1.it/publications/slayer17/slayer17-video.mp4">video</a>.</li>
-            <li><img src="icons/ppbd14-icon.jpg" alt="ppbd14-icon" />
-            [C08] M. Fratarcangeli, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/ppbd14/ppbd14-paper.pdf"><em>Towards
-            a Massively Parallel Solver for Position Based
-            Dynamics</em>.</a> SIGRAD 2014. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/ppbd14/ppbd14-paper.pdf">paper</a>.</li>
-            <li><img src="icons/appeditstar14-icon.jpg"
-            alt="appeditstar14-icon" /> [C07] T.-W. Schmidt, F.
-            Pellacini, D. Nowrouzezahrai, W. Jarosz, C. Dachsbacher. <a
-            href="http://pellacini.di.uniroma1.it/publications/appeditstar14/appeditstar14-paper.pdf"><em>State
-            of the Art in Artistic Editing of Appearance, Lighting, and
-            Material</em>.</a> Eurographics State of the Art Reports
-            2014. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/appeditstar14/appeditstar14-paper.pdf">paper</a>.</li>
-            <li><img src="icons/ishair12-icon.jpg"
-            alt="ishair12-icon" /> [C06] J. Ou, F. Xie, P.
-            Krishnamachari, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/ishair12/ishair12-paper.pdf">ISHair:
-            Importance Sampling for Hair Scattering</a>. ACM SIGGRAPH
-            2012 Talks, 2012.</li>
-            <li><img src="icons/secvis08-icon.jpg"
-            alt="secvis08-icon" /> [C05] S. Bratus, A. Hansen, F.
-            Pellacini, A. Shubina. <a
-            href="http://pellacini.di.uniroma1.it/publications/secvis08/secvis08-paper.pdf"><em>Backhoe,
-            a Packet Trace and Log Browser</em>.</a> Workshop for
-            Visualization for Cyber Security (VizSEC), 2008. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/secvis08/secvis08-paper.pdf">paper</a>.</li>
-            <li><img src="icons/hybrid05-icon.jpg"
-            alt="hybrid05-icon" /> [C04] H. Li, F. Pellacini, K.
-            Torrance. <a
-            href="http://pellacini.di.uniroma1.it/publications/hybrid05/hybrid05-paper.pdf"><em>A
-            Hybrid Monte Carlo Method for Accurate and Efficient
-            Subsurface Scattering</em>.</a> Eurographics Symposium on
-            Rendering, 2005. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/hybrid05/hybrid05-paper.pdf">paper</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/hybrid05/hybrid05-talk.pdf">talk</a>.</li>
-            <li><img src="icons/fdp03-icon.jpg" alt="fdp03-icon" />
-            [C03] J. Ferwerda, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/fdp03/fdp03-paper.pdf"><em>Functional
-            Difference Predictors (FDPs): measuring meaningful image
-            differences</em>.</a> Asilomar Conference on Signals,
-            Systems, and Computers, 2003. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/fdp03/fdp03-paper.pdf">paper</a>.</li>
-            <li><img src="icons/textures01-icon.jpg"
-            alt="textures01-icon" /> [C02] R. Dumont, F. Pellacini, J.
-            Ferwerda. <a
-            href="http://pellacini.di.uniroma1.it/publications/textures01/textures01-paper.pdf"><em>Perceptually-based
-            texture caching for hardware rendering</em>.</a>
-            Eurographics Workshop on Rendering, 2001. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/textures01/textures01-paper.pdf">paper</a>.</li>
-            <li><img src="icons/gloss01-icon.jpg" alt="gloss01-icon" />
-            [C01] J. Ferwerda, F. Pellacini, D. Greenberg. <a
-            href="http://pellacini.di.uniroma1.it/publications/gloss01/gloss01-paper.pdf"><em>A
-            Psychophysically-Based Model of Surface Gloss
-            Perception</em>.</a> Human vision and electronic imaging VI,
-            2001. Links: <a
-            href="http://pellacini.di.uniroma1.it/publications/gloss01/gloss01-paper.pdf">paper</a>.</li>
-            </ul>
-            <h3 id="book-chapters">Book chapters</h3>
-            <ul>
-            <li><img src="icons/gems07-icon.jpg" alt="gems07-icon" />
-            [B03] F. Pellacini, M. Hašan, K. Bala. <em>Interactive
-            Cinematic Relighting with Global Illumination</em>. In H.
-            Nguyen ed., GPU Gems 3, Addison-Wesley, 2007.</li>
-            <li><img src="icons/gems03a-icon.jpg" alt="gems03a-icon" />
-            [B02] F. Pellacini, K. Vidimče. <em>Cinematic Lighting</em>.
-            In R. Fernando ed., GPU Gems, Addison-Wesley, 2007.</li>
-            <li><img src="icons/gems03b-icon.jpg" alt="gems03b-icon" />
-            [B01] M. Bunnel, F. Pellacini. <em>Shadow Map
-            Antialiasing</em>. In R. Fernando ed., GPU Gems,
-            Addison-Wesley, 2007.</li>
-            </ul>
-            <h2 id="courses">Courses</h2>
-            <h3 id="university-courses">University Courses</h3>
-            <ul>
-            <li>F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics20c/graphics20c.html"><em>Computer
-            Graphics</em>.</a> Sapienza University of Rome, <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics17a/graphics17a.html">2017</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics20a/graphics20a.html">2020a</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics20c/graphics20c.html">2020b</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics21a/graphics21a.html">2021</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics22a/graphics22a.html">2022</a>.</li>
-            <li>F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics20d/graphics20d.html"><em>Fundamentals
-            of Computer Graphics</em>.</a> Sapienza University of Rome,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics11/graphics11.html">2012</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics13a/graphics13a.html">2013a</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics13b/graphics13b.html">2013b</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics14/graphics14.html">2014</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics15/graphics15.html">2015</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics16/graphics16.html">2016</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics17b/graphics17b.html">2017</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics20b/graphics20b.html">2020a</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics20d/graphics20d.html">2020b</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics22b/graphics22b.html">2021</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics22b/graphics22b.html">2022</a>.</li>
-            <li>I. Masi, F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/fondamentilab22/fondamentilab22.html"><em>Fondamenti
-            di Programmazione (Lab)</em>.</a> Sapienza University of
-            Rome.</li>
-            <li>F. Pellacini, R. Silvestri, A. Monti. <a
-            href="http://pellacini.di.uniroma1.it/publications/fondamenti16/fondamenti16.html"><em>Fondamenti
-            di Programmazione</em>.</a> Sapienza University of Rome, <a
-            href="http://pellacini.di.uniroma1.it/publications/fondamenti11/fondamenti11.html">2011</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/fondamenti12/fondamenti12.html">2012</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/fondamenti13/fondamenti13.html">2013</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/fondamenti14/fondamenti14.html">2014</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/fondamenti15/fondamenti15.html">2015</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/fondamenti16/fondamenti16.html">2016</a>.</li>
-            <li>F. Pellacini. <em>Physics Programming</em>. University
-            of Verona, 2016, 2017.</li>
-            <li>F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics09/graphics09.html"><em>Computer
-            Graphics</em>.</a> Dartmouth College, <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics05/graphics05.html">2005</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics06/graphics06.html">2006</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics08/graphics08.html">2008</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/graphics09/graphics09.html">2009</a>.</li>
-            <li>F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/topics08/topics08.html"><em>Topics
-            in Computer Graphics</em>.</a> Dartmouth College, <a
-            href="http://pellacini.di.uniroma1.it/publications/topics06/topics06.html">2006</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/topics08/topics08.html">2008</a>.</li>
-            <li>F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/projects10/projects10.html"><em>Projects
-            in Digital Art</em>.</a> Dartmouth College, <a
-            href="http://pellacini.di.uniroma1.it/publications/projects07/projects07.html">2007</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/projects08/projects08.html">2008</a>,
-            <a
-            href="http://pellacini.di.uniroma1.it/publications/projects10/projects10.html">2010</a>.</li>
-            <li>F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/programming10/programming10.html"><em>Programming
-            for Interactive Digital Art</em>.</a> Dartmouth College, <a
-            href="http://pellacini.di.uniroma1.it/publications/programming10/programming10.html">2010</a>.</li>
-            <li>F. Pellacini. <a
-            href="http://pellacini.di.uniroma1.it/publications/concepts07/concepts07.html"><em>Concepts
-            in Computing</em>.</a> Dartmouth College, 2007.</li>
-            <li>F. Pellacini, D. P. Greenberg. Advanced Computer
-            Animation. Cornell, 2005.</li>
-            <li>F. Pellacini, D. P. Greenberg. Computer Animation.
-            Cornell, 2004.</li>
-            </ul>
-            <h3 id="conference-courses">Conference Courses</h3>
-            <ul>
-            <li>C. Boyd, K. Fatahalian, T. Forsyth, M. Houston, A.
-            Lefohn, D. Luebke, A. Munshi, J. Olick, J. Owens, F.
-            Pellacini, M. Pharr, J. Shopf. <em>Beyond Programmable
-            Shading</em>. ACM SIGGRAPH, 2008.</li>
-            <li>M. Olano, D. Blythe, L. Gritz, M. Kilgard, M. McCool, F.
-            Pellacini, T. Scheuermann. <em>GPU Shading and
-            Rendering</em>. ACM SIGGRAPH, 2006.</li>
-            </ul>
-            <!-- CHECK LINKS -->
-	    </article>
+    <article>
+      <h1>Fabio Pellacini</h1>
+      <p>Full Professor of Computer Science<br />
+      University of Modena and Reggio Emilia</p>
+      <h2>Background</h2>
+      <p>Since the Winter of 2023, I am a Full Professor in <a href="https://www.fim.unimore.it/">Computer Science</a> at the <a href="https://www.unimore.it/">University of Modena and Reggio Emilia</a>, where I work on Computer Graphics methods to solve content creation and design problems. Before then I was an Associate Professor (2011–2017) and then Full Professor (2017–2023) in <a href="http://www.di.uniroma1.it">Computer Science</a> at <a href="http://www.uniroma1.it">Sapienza University of Rome</a>, and an Assistant Professor (2005-2009) and then an Associate Professor (2009-2011) in <a href="http://www.cs.dartmouth.edu">Computer Science</a> at <a href="http://www.dartmouth.edu">Dartmouth College</a>, an Ivy League University. Before Dartmouth I was a Visiting Assistant Professor (2004-2005) in <a href="http://www.cis.cornell.edu">Computing and Information Science</a> at <a href="http://www.cornell.edu">Cornell University</a>. I also worked in the research division of <a href="http://www.pixar.com">Pixar Animation Studios</a> (2002-2004) developing new algorithms used in various award winning feature films (<em>Monster's Inc., Finding Nemo, The Incredibles, Cars</em>). I received a Ph.D. in <a href="http://www.cs.cornell.edu">Computer Science</a> from <a href="http://www.cornell.edu">Cornell University</a> in 2002, working at the <a href="http://www.graphics.cornell.edu">Program of Computer Graphics</a>, and a Laurea degree in <a href="http://www.fis.unipr.it">Physics</a> (equiv. to BS and MS) from the <a href="http://www.unipr.it">University of Parma</a>, Italy. I have received an NSF CAREER award in 2008, and an Alfred P. Sloan research fellowship in 2009.</p>
+      <h2>Research</h2>
+      <h3>Overview</h3>
+      <p>My main research interest is the investigation of computational methods to support design of 3D objects, from their shape to their appearance, through the development of interactive rendering algorithms, intuitive design interfaces, novel fabrication methods, and user studies. This research led to various theoretical results and practical applications in the areas of interactive realistic rendering, 3d printing, user interfaces and visual perception. A comprehensive list of [publications][publications] is available.</p>
+      <h3>Collaborative Design Workflows</h3>
+      <p>While cloud-based computing have ushered an era of realtime collaborative tools, 3D content creation is still mostly done by artists working individually on single assets. In this project, we investigate methods that allows artists to freely collaborate on 3D content both offline, via version control, and in realtime, via collaborative interfaces.</p>
+      <!--
+      Related papers:
+      (6) [SceneGit: a Practical System for Diffing and Merging 3D Environments][scenegit19],
+      (4) [LevelMerge: Collaborative Game Level Eediting by Mmerging Labeled Graphs][levelmerge16],
+      (3) [cSculpt: A System for Collaborative Sculpting][csculpt16],
+      (2) [MeshHisto: Collaborative Modeling by Sharing and Retargeting Editing Histories][meshhisto15],
+      (1) [MeshGit: Diffing and Merging Meshes for Polygonal Modeling][meshgit13].
+      -->
+
+      <h3>Intuitive appearance design</h3>
+      <p>Designing appearance, i.e. material and lighting parameters, is cumbersome since current interfaces require designers to specify algorithmic parameters that are only indirectly related to objects' appearance. My work investigates interfaces that allow users to effectively specify environments' final looks, and algorithms that automatically set the appearance parameters required to achieve users' goals.</p>
+      <!--
+      Related papers:
+      (25) [Texture Retrieval in the Wild Through Detection-Based Attributes][textons19],
+      (24) [Texel-Att: Representing and Classifying Element-based Textures by Attributes][texelatt19],
+      (23) [Grammar-based procedural animations for motion graphics][gmotion19],
+      (22) [gMotion: A Spatio-Temporal Grammar for the Procedural Generation of Motion Graphics][gmotion18],
+      (21) [sLayer: a System for Multi-Layered Material Sculpting][slayer17],
+      (20) [gTangle: a Grammar for the Procedural Generation of Tangle Patterns][gtangle16],
+      (19) [State of the Art in Artistic Eediting of Appearance, Lighting, and Material][appeditstar16],
+      (18) [AppIm: Linear Spaces for Image-Based Appearance Editing][appim14],
+      (17) [How do People Edit Light Fields?][lfstudy14],
+      (16) [AppWarp: Retargeting Measured Materials by Appearance-Space Warping][appwarp11],
+      (15) [AppGen: Interactive Material Modeling from a Single Image][appgen11],
+      (14) [EnvyLight: An Interface for Editing Natural Illumination][envylight10],
+      (13) [Toward Evaluating Material Design Interface Paradigms for Novice Users][matstudy10],
+      (12) [BendyLights: Artistic Control of Direct Illumination by Curving Light Rays][bendylight10],
+      (11) [Visibility Editing For All-Frequency Shadow Design][scheat10],
+      (10) [User Controllable Color Transfer][ucct10],
+      (09) [Toward Evaluating Lighting Design Interface Paradigms for Novice Users][lightstudy09],
+      (08) [SubEdit: A Representation for Editing Measured Heterogeneous Subsurface Scattering][subedit09],
+      (07) [AppProp: All-Pairs Appearance-Space Edit Propagation][appprop08],
+      (06) [iCheat: A Representation for Artistic Control of Cinematic Realistic Lighting][icheat08],
+      (05) [AppWand: Editing Measured Materials using Appearance-Driven Optimization][appwand07],
+      (04) [Lighting by Paint][lpaint07],
+      (03) [A User Interface for Interactive Cinematic Shadow Design][shadowui02],
+      (02) [A Psychophysically-Based Model of Surface Gloss Perception][gloss01],
+      (01) [Toward a Psychophysically-based Light Reflection model for Image Synthesis][gloss00].
+      -->
+
+      <h3>Analysis and Support of Design Workflows</h3>
+      <p>Content creation is the largest remaining bottleneck for a ubiquitous use of synthetic imagery. My experience in industry as well as academia is that, while many user interfaces exist, little is known objectively about how well these methods work in real-world usage and what are the current bottlenecks that are left in designers’ workflows. In this project, we are interested in understanding how different users model a variety of shapes, materials, and lighting, first individually and then in the context of entire scenes.</p>
+      <!--
+      (8) [State of the Art in Artistic Eediting of Appearance, Lighting, and Material][appeditstar16],
+      (7) [3DFlow: Continuous Summarization of Mesh Editing Workflows][3dflow15],
+      (6) [How do People Edit Light Fields?][lfstudy14],
+      (5) [MeshGit: Diffing and Merging Meshes for Polygonal Modeling][meshgit13],
+      (4) [Toward Evaluating Progressive Rendering Methods in Appearance Design Tasks][renderstudy13],
+      (3) [MeshFlow: Interactive Visualization of Mesh Construction Sequences][meshflow11],
+      (2) [Toward Evaluating Material Design Interface Paradigms for Novice Users][matstudy10],
+      (1) [Toward Evaluating Lighting Design Interface Paradigms for Novice Users][lightstudy09].
+      -->
+
+      <h3>Physical Appearance Reproduction</h3>
+      <p>Today printing methods can reproduce the color and shapes of physical objects. This project investigates how to use current printing hardware to reproduce a large variety of material appearance for opaque and translucent objects.</p>
+      <!--
+      Related papers:
+      (4) [Bi-Scale Appearance Reproduction][fabaniso13],
+      (3) [Printing Spatially-Varying Reflectance for Reproducing HDR Images][hdrprint12],
+      (2) [Fabricating Spatially-Varying Subsurface Scattering][bssrdfprint10],
+      (1) [Printing Spatially-Varying Reflectancw][brdfprint09].
+      -->
+
+      <h3>Efficient rendering of complex appearance</h3>
+      <p>High-quality rendering of complex environments remains problematic, especially when complex materials and lighting are involved. I am interested in deriving scalable algorithms for offline rendering of complex appearance in environments with high geometric complexity. I believe these developments will shed insights on how to derive interactive scalable formulations on future machines. Some of these algorithms can also be used to provide interactive feedback, that is necessary for efficient appearance design. While for simple scenes current algorithms serves us well, I am particularly interested in guaranteeing interactivity while designing materials and lighting in the globally-illuminated high-complexity environments, which remains problematic for typical applications in architectural, cinematic and game lighting.</p>
+      <!--
+      Related papers:
+      (11) [ISHair: Importance Sampling for Hair Scattering Implementation][ishair12],
+      (10) [LightSlice: Matrix Slice Sampling for the Many-Lights Problem][lightslice11],
+      (09) [SafeGI: Type Checking to Improve Correctness in Rendering System Implementation][safegi10],
+      (08) [Fast, Realistic Lighting and Material Design using Nonlinear Cut Approximation][cuts08],
+      (07) [Tensor Clustering for Rendering Many-Light Animations][temporal08],
+      (06) [Matrix Row-Column Sampling for the Many-Light Problem][mxsmp07],
+      (05) [Direct-to-Indirect Transfer for Cinematic Relighting][dti06],
+      (04) [Lpics: a Hybrid Hardware-Accelerated Relighting Engine for Computer Cinematography][lpics05],
+      (03) [User-Configurable Automatic Shader Simplification][lod05],
+      (02) [A Hybrid Monte Carlo Method for Accurate and Efficient Subsurface Scattering][hybrid05],
+      (01) [Interactive Global Illumination in Dynamic Scenes][igids02].
+      -->
+
+      <h3>Perceptual metrics for rendering algorithms (not active)</h3>
+      <p>The basic premise of appearance-based rendering is to avoid computing details of an image that our eyes cannot see. In the past, I have been interested in understanding how perceptual metrics can be used in interactive applications, instead of offline ones. To do so, I have investigated a decision theoretic formulation of interactive rendering, where perceptual metrics are used as priority schemes.</p>
+      <!--
+      Related papers:
+      (3) [Perceptually-Driven Decision Theory for Interactive Realistic Rendering][decisiontheory03],
+      (2) [Functional Difference Predictors (FDPs): measuring meaningful image differences][fdp03],
+      (1) [Perceptually-based texture caching for hardware rendering][textures01].
+      -->
+
+      <h3>Non-photorealistic rendering (not active)</h3>
+      <p>And finally, as most graphics people, I love artistic renditions. As a side project, I developed a generalized mosaicing algorithm that made the frontispiece for siggraph.</p>
+      <!--
+      Related papers:
+      (1) [Jigsaw Image Mosaics][jim02].
+      -->
+
+      <h2>Books</h2>
+      <ul>
+      <li><img alt="fondamentibook16-icon" src="icons/fondamentibook16-icon.jpg" /> F. Pellacini. <a href="books/fondamentibook16/fondamentibook16.html"><em>Fondamenti di Programmazione in Python</em>.</a> Apple iBook Store and Amazon Kindle Store.</li>
+      </ul>
+      <h2>Publications</h2>
+      <h3>Leading Journal Articles: SIGGRAPH, TOG, PAMI, TVCG</h3>
+      <ul>
+      <li><img alt="boolsurf22-icon" src="icons/boolsurf22-icon.jpg" /> [S40] M. Riso, G. Nazzaro, E. Puppo, A. Jacobson, Q. Zhou, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/boolsurf22/boolsurf22-paper.pdf"><em>BoolSurf : Boolean Operations on Surfaces</em>.</a> ACM Transactions on Graphics (SIGGRAPH Asia 2022), 2022. Links: <a href="http://pellacini.di.uniroma1.it/publications/boolsurf22/boolsurf22-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/boolsurf22/boolsurf22-video.mp4">video</a>.</li>
+      <li><img alt="fastbool22-icon" src="icons/fastbool22-icon.jpg" /> [S39] G. Cherchi, F. Pellacini, M. Attene, M. Livesu. <a href="http://pellacini.di.uniroma1.it/publications/fastbool22/fastbool22-paper.pdf"><em>Interactive and Robust Mesh Booleans</em>.</a> ACM Transaction on Graphics (SIGGRAPH Asia 2022), 2022. Links: <a href="http://pellacini.di.uniroma1.it/publications/fastbool22/fastbool22-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/fastbool22/fastbool22-video.mp4">video</a>, <a href="https://www.youtube.com/watch?v=9fo7ApTrXdw">youtube</a>.</li>
+      <li><img alt="bsurf22-icon" src="icons/bsurf22-icon.jpg" /> [S38] C. Mancinelli, G. Nazzaro, F. Pellacini, E. Puppo. <a href="http://pellacini.di.uniroma1.it/publications/bsurf22/bsurf22-paper.pdf"><em>b/Surf: Interactive Bèzier Splines on Surface Meshes</em>.</a> IEEE Transactions on Visualization and Computer Graphics, 2022. Links: <a href="http://pellacini.di.uniroma1.it/publications/bsurf22/bsurf22-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/bsurf22/bsurf22-video.mp4">video</a>.</li>
+      <li><img alt="geotangle22-icon" src="icons/geotangle22-icon.jpg" /> [S37] G. Nazzaro, E. Puppo, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/geotangle22/geotangle22-paper.pdf"><em>GeoTangle: Interactive Design of Geodesic Tangle Patterns on Surfaces</em>.</a> ACM Transaction on Graphics, 2022. Links: <a href="http://pellacini.di.uniroma1.it/publications/geotangle22/geotangle22-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/geotangle22/geotangle22-video.mp4">video</a>.</li>
+      <li><img alt="pavel22-icon" src="icons/pavel22-icon.jpg" /> [S36] F. A. Fanni, F. Pellacini, R. Scateni, A. Giachetti. <a href="http://pellacini.di.uniroma1.it/publications/pavel22/pavel22-paper.pdf"><em>Pavel: Decorative Patterns with Packed Volumetric Elements</em>.</a> ACM Transaction on Graphics, 2022. Links: <a href="http://pellacini.di.uniroma1.it/publications/pavel22/pavel22-paper.pdf">paper</a>.</li>
+      <li><img alt="scenegit19-icon" src="icons/scenegit19-icon.jpg" /> [S35] E. Carra, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/scenegit19/scenegit19-paper.pdf"><em>SceneGit: a Practical System for Diffing and Merging 3D Environments</em>.</a> ACM Transaction on Graphics (SIGGRAPH Asia 2019), 2019. Links: <a href="http://pellacini.di.uniroma1.it/publications/scenegit19/scenegit19-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/scenegit19/scenegit19-supplemental.zip">supplemental</a>.</li>
+      <li><img alt="gtangle16-icon" src="icons/gtangle16-icon.jpg" /> [S34] C. Santoni, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/gtangle16/gtangle16-paper.pdf"><em>gTangle: a Grammar for the Procedural Generation of Tangle Patterns</em>.</a> ACM Transaction on Graphics (SIGGRAPH Asia 2016), 2016. Links: <a href="http://pellacini.di.uniroma1.it/publications/gtangle16/gtangle16-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/gtangle16/gtangle16-video.mp4">video</a>, <a href="http://pellacini.di.uniroma1.it/publications/gtangle16/gtangle16-supplemental.zip">supplemental</a>.</li>
+      <li><img alt="vivace16-icon" src="icons/vivace16-icon.jpg" /> [S33] M. Fratarcangeli, V, Tibaldo, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/vivace16/vivace16-paper.pdf"><em>Vivace: a Practical Gauss-Seidel Method for Stable Soft Body Dynamics</em>.</a> ACM Transaction on Graphics (SIGGRAPH Asia 2016), 2016. Links: <a href="http://pellacini.di.uniroma1.it/publications/vivace16/vivace16-paper.pdf">paper</a>, <a href="https://youtu.be/vkBIQ4LOhGk">youtube</a>, <a href="http://pellacini.di.uniroma1.it/publications/vivace16/vivace16-video.mp4">video</a>.</li>
+      <li><img alt="csculpt16-icon" src="icons/csculpt16-icon.jpg" /> [S32] C. Calabrese, G. Salvati, M. Tarini, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/csculpt16/csculpt16-paper.pdf"><em>cSculpt: A System for Collaborative Sculpting</em>.</a> ACM Transaction on Graphics (SIGGRAPH 2016), 2016. Links: <a href="http://pellacini.di.uniroma1.it/publications/csculpt16/csculpt16-paper.pdf">paper</a>, <a href="https://youtu.be/H--1zSkarhk">youtube</a>, <a href="http://pellacini.di.uniroma1.it/publications/csculpt16/csculpt16-video.mp4">video</a>.</li>
+      <li><img alt="meshhisto15-icon" src="icons/meshhisto15-icon.jpg" /> [S31] G. Salvati, C. Santoni, V. Tibaldo, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/meshhisto15/meshhisto15-paper.pdf"><em>MeshHisto: Collaborative Modeling by Sharing and Retargeting Editing Histories</em>.</a> ACM Transaction on Graphics (SIGGRAPH Asia 2015), 2015. Links: <a href="http://pellacini.di.uniroma1.it/publications/meshhisto15/meshhisto15-paper.pdf">paper</a>, <a href="https://youtu.be/-XCRTsCBQ4Y">youtube</a>, <a href="http://pellacini.di.uniroma1.it/publications/meshhisto15/meshhisto15-video.mp4">video</a>, <a href="http://pellacini.di.uniroma1.it/publications/meshhisto15/meshhisto15-supplemental.zip">supplemental</a>.</li>
+      <li><img alt="3dflow15-icon" src="icons/3dflow15-icon.jpg" /> [S30] J. Denning, V. Tibaldo, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/3dflow15/3dflow15-paper.pdf"><em>3DFlow: Continuous Summarization of Mesh Editing Workflows</em>.</a> ACM Transaction on Graphics (SIGGRAPH 2015), 2015. Links: <a href="http://pellacini.di.uniroma1.it/publications/3dflow15/3dflow15-paper.pdf">paper</a>, <a href="https://youtu.be/2nNbc-mq2to">youtube</a>, <a href="http://pellacini.di.uniroma1.it/publications/3dflow15/3dflow15-video.mp4">video</a>.</li>
+      <li><img alt="greta15-icon" src="icons/greta15-icon.jpg" /> [S29] A. Attanasi, A. Cavagna, L. Del Castello, I. Giardina, A. Jelic, S. Melillo, L. Parisi, F. Pellacini, E. Shen, E. Silvestri, M. Viale. <a href="http://pellacini.di.uniroma1.it/publications/greta15/greta15-paper.pdf"><em>Greta: A Novel Global and Recursive Tracking Algorithm in Three Dimensions</em>.</a> IEEE Transactions on Pattern Analysis and Machine Intelligence, 2015. Links: <a href="http://pellacini.di.uniroma1.it/publications/greta15/greta15-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/greta15/greta15-supplemental.zip">supplemental</a>.</li>
+      <li><img alt="appim14-icon" src="icons/appim14-icon.jpg" /> [S28] F. Di Renzo, C. Calabrese, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/appim14/appim14-paper.pdf"><em>AppIm: Linear Spaces for Image-based Appearance Editing</em>.</a> ACM Transactions on Graphics (SIGGRAPH Asia 2014), 2014. Links: <a href="http://pellacini.di.uniroma1.it/publications/appim14/appim14-paper.pdf">paper</a>, <a href="https://youtu.be/KlGsSKZVkok">youtube</a>, <a href="http://pellacini.di.uniroma1.it/publications/appim14/appim14-video.mp4">video</a>, <a href="http://pellacini.di.uniroma1.it/publications/appim14/appim14-supplemental.zip">supplemental</a>, <a href="http://pellacini.di.uniroma1.it/publications/appim14/appim14-talk.pdf">talk</a>.</li>
+      <li><img alt="lfstudy14-icon" src="icons/lfstudy14-icon.jpg" /> [S27] A. Jarabo, B. Masia, A. Bousseau, F. Pellacini, D. Gutierrez. <a href="http://pellacini.di.uniroma1.it/publications/lfstudy14/lfstudy14-paper.pdf"><em>How Do People Edit Light Fields?</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2014), 2014. Links: <a href="http://pellacini.di.uniroma1.it/publications/lfstudy14/lfstudy14-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/lfstudy14/lfstudy14-video.mp4">video</a>, <a href="http://pellacini.di.uniroma1.it/publications/lfstudy14/lfstudy14-supplemental.zip">supplemental</a>.</li>
+      <li><img alt="meshgit13-icon" src="icons/meshgit13-icon.jpg" /> [S26] J. Denning, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/meshgit13/meshgit13-paper.pdf"><em>MeshGit: Diffing and Merging Meshes for Polygonal Modeling</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2013), 2013. Links: <a href="http://pellacini.di.uniroma1.it/publications/meshgit13/meshgit13-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/appim14/appim14-talk.pdf">talk</a>.</li>
+      <li><img alt="fabaniso13-icon" src="icons/fabaniso13-icon.jpg" /> [S25] Y. Lan, Y. Dong, F. Pellacini, X. Tong. <a href="http://pellacini.di.uniroma1.it/publications/fabaniso13/fabaniso13-paper.pdf"><em>Bi-Scale Appearance Fabrication</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2013), 2013. Links: <a href="http://pellacini.di.uniroma1.it/publications/fabaniso13/fabaniso13-paper.pdf">paper</a>, <a href="https://youtu.be/RcJ2JmzylYI">youtube</a>, <a href="http://pellacini.di.uniroma1.it/publications/fabaniso13/fabaniso13-video.mp4">video</a>.</li>
+      <li><img alt="hdrprint12-icon" src="icons/hdrprint12-icon.jpg" /> [S24] Y. Dong, X. Tong, F. Pellacini, B. Guo. <a href="http://pellacini.di.uniroma1.it/publications/hdrprint12/hdrprint12-paper.pdf"><em>Printing Spatially Varying Reflectance for Reproducing HDR Images</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2012), 2012. Links: <a href="http://pellacini.di.uniroma1.it/publications/hdrprint12/hdrprint12-paper.pdf">paper</a>, <a href="https://youtu.be/Od86H4cPI_o">youtube</a>, <a href="http://pellacini.di.uniroma1.it/publications/hdrprint12/hdrprint12-video.mp4">video</a>.</li>
+      <li><img alt="lightslice11-icon" src="icons/lightslice11-icon.jpg" /> [S23] J. Ou, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/lightslice11/lightslice11-paper.pdf"><em>LightSlice: Matrix Slice Sampling for the Many-Lights Problem</em>.</a> ACM Transactions on Graphics (SIGGRAPH Asia 2011), 2011. Links: <a href="http://pellacini.di.uniroma1.it/publications/lightslice11/lightslice11-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/lightslice11/lightslice11-talk.pdf">talk</a>.</li>
+      <li><img alt="appwarp11-icon" src="icons/appwarp11-icon.jpg" /> [S22] X. An, X. Tong, J. D. Denning, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/appwarp11/appwarp11-paper.pdf"><em>AppWarp: Retargeting Measured Materials by Appearance-Space Warping</em>.</a> ACM Transactions on Graphics (SIGGRAPH Asia 2011), 2011. Links: <a href="http://pellacini.di.uniroma1.it/publications/appwarp11/appwarp11-paper.pdf">paper</a>, <a href="https://youtu.be/ta1L24qhVD8">youtube</a>, <a href="http://pellacini.di.uniroma1.it/publications/appwarp11/appwarp11-video.mp4">video</a>, <a href="http://pellacini.di.uniroma1.it/publications/appwarp11/appwarp11-supplemental.zip">supplemental</a>, <a href="http://pellacini.di.uniroma1.it/publications/appwarp11/appwarp11-talk.pdf">talk</a>.</li>
+      <li><img alt="appgen11-icon" src="icons/appgen11-icon.jpg" /> [S21] Y. Dong, X. Tong, F. Pellacini, B. Guo. <a href="http://pellacini.di.uniroma1.it/publications/appgen11/appgen11-paper.pdf"><em>AppGen: Interactive Material Modeling from a Single Image</em>.</a> ACM Transactions on Graphics (SIGGRAPH Asia 2011), 2011. Links: <a href="http://pellacini.di.uniroma1.it/publications/appgen11/appgen11-paper.pdf">paper</a>, <a href="https://youtu.be/SB-zvgeCeow">youtube</a>, <a href="http://pellacini.di.uniroma1.it/publications/appgen11/appgen11-video.mp4">video</a>, <a href="http://pellacini.di.uniroma1.it/publications/appgen11/appgen11-supplemental.zip">supplemental</a>.</li>
+      <li><img alt="meshflow11-icon" src="icons/meshflow11-icon.jpg" /> [S20] J. Denning, W. B. Kerr, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/meshflow11/meshflow11-paper.pdf"><em>MeshFlow: Interactive Visualization of Mesh Construction Sequences</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2011), 2011. Links: <a href="http://pellacini.di.uniroma1.it/publications/meshflow11/meshflow11-paper.pdf">paper</a>, <a href="https://youtu.be/0c3ouqKs4b4">youtube</a>, <a href="http://pellacini.di.uniroma1.it/publications/meshflow11/meshflow11-video.mp4">video</a>, <a href="http://pellacini.di.uniroma1.it/publications/meshflow11/meshflow11-supplemental.zip">supplemental</a>, <a href="http://pellacini.di.uniroma1.it/publications/meshflow11/meshflow11-talk.pdf">talk</a>.</li>
+      <li><img alt="envylight10-icon" src="icons/envylight10-icon.jpg" /> [S19] F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/envylight10/envylight10-paper.pdf"><em>EnvyLight: An Interface for Editing Natural Illumination</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2010), 2010. Links: <a href="http://pellacini.di.uniroma1.it/publications/envylight10/envylight10-paper.pdf">paper</a>, <a href="https://youtu.be/HI2DjiYMSkg">youtube</a>, <a href="http://pellacini.di.uniroma1.it/publications/envylight10/envylight10-video.mp4">video</a>, <a href="http://pellacini.di.uniroma1.it/publications/envylight10/envylight10-supplemental.zip">supplemental</a>, <a href="http://pellacini.di.uniroma1.it/publications/envylight10/envylight10-talk.pdf">talk</a>.</li>
+      <li><img alt="matstudy10-icon" src="icons/matstudy10-icon.jpg" /> [S18] W. B. Kerr, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/matstudy10/matstudy10-paper.pdf"><em>Toward Evaluating Material Design Interface Paradigms for Novice Users</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2010), 2010. Links: <a href="http://pellacini.di.uniroma1.it/publications/matstudy10/matstudy10-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/matstudy10/matstudy10-supplemental.zip">supplemental</a>.</li>
+      <li><img alt="bssrdfprint10-icon" src="icons/bssrdfprint10-icon.jpg" /> [S17] Y. Dong, J. Wang, F. Pellacini, X. Tong, B. Guo. <a href="http://pellacini.di.uniroma1.it/publications/bssrdfprint10/bssrdfprint10-paper.pdf"><em>Fabricating Spatially-Varying Subsurface Scattering</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2010), 2010. Links: <a href="http://pellacini.di.uniroma1.it/publications/bssrdfprint10/bssrdfprint10-paper.pdf">paper</a>, <a href="https://youtu.be/D-GGtmBA0iw">youtube</a>, <a href="http://pellacini.di.uniroma1.it/publications/bssrdfprint10/bssrdfprint10-video.mp4">video</a>.</li>
+      <li><img alt="brdfprint09-icon" src="icons/brdfprint09-icon.jpg" /> [S16] W. Matusik, B. Ajdin, J. Gu, J. Lawrence, H. Lensch, F. Pellacini, S. Rusinkiewicz. <a href="http://pellacini.di.uniroma1.it/publications/brdfprint09/brdfprint09-paper.pdf"><em>Printing Spatially-Varying Reflectance</em>.</a> ACM Transactions on Graphics (SIGGRAPH Asia 2009), 2009. Links: <a href="http://pellacini.di.uniroma1.it/publications/brdfprint09/brdfprint09-paper.pdf">paper</a>.</li>
+      <li><img alt="lightstudy09-icon" src="icons/lightstudy09-icon.jpg" /> [S15] W. Kerr, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/lightstudy09/lightstudy09-paper.pdf"><em>Toward Evaluating Lighting Design Interface Paradigms for Novice Users</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2009), 2009. Links: <a href="http://pellacini.di.uniroma1.it/publications/lightstudy09/lightstudy09-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/lightstudy09/lightstudy09-supplemental.zip">supplemental</a>.</li>
+      <li><img alt="subedit09-icon" src="icons/subedit09-icon.jpg" /> [S14] Y. Song, X. Tong, F. Pellacini, P. Peers. <a href="http://pellacini.di.uniroma1.it/publications/subedit09/subedit09-paper.pdf"><em>SubEdit: A Representation for Editing Measured Heterogeneous Subsurface Scattering</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2009), 2009. Links: <a href="http://pellacini.di.uniroma1.it/publications/subedit09/subedit09-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/subedit09/subedit09-video.mp4">video</a>, <a href="http://pellacini.di.uniroma1.it/publications/subedit09/subedit09-supplemental.zip">supplemental</a>.</li>
+      <li><img alt="cuts08-icon" src="icons/cuts08-icon.jpg" /> [S13] E. Cheslack-Postava, R. Wang, O. Akerlund, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/cuts08/cuts08-paper.pdf"><em>Fast, Realistic Lighting and Material Design using Nonlinear Cut Approximation</em>.</a> ACM Transactions on Graphics (SIGGRAPH Asia 2008), 2008. Links: <a href="http://pellacini.di.uniroma1.it/publications/cuts08/cuts08-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/cuts08/cuts08-video.mp4">video</a>.</li>
+      <li><img alt="appprop08-icon" src="icons/appprop08-icon.jpg" /> [S12] X. An, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/appprop08/appprop08-paper.pdf"><em>AppProp: All-Pairs Appearance-Space Edit Propagation</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2008), 2008. Links: <a href="http://pellacini.di.uniroma1.it/publications/appprop08/appprop08-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/appprop08/appprop08-video.mp4">video</a>, <a href="http://pellacini.di.uniroma1.it/publications/appprop08/appprop08-supplemental.zip">supplemental</a>, <a href="http://pellacini.di.uniroma1.it/publications/appprop08/appprop08-talk.pdf">talk</a>.</li>
+      <li><img alt="appwand07-icon" src="icons/appwand07-icon.jpg" /> [S11] F. Pellacini, J. Lawrence. <a href="http://pellacini.di.uniroma1.it/publications/appwand07/appwand07-paper.pdf"><em>AppWand: Editing Measured Materials using Appearance-Driven Optimization</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2007), 2007. Links: <a href="http://pellacini.di.uniroma1.it/publications/appwand07/appwand07-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/appwand07/appwand07-video.mp4">video</a>, <a href="http://pellacini.di.uniroma1.it/publications/appwand07/appwand07-talk.pdf">talk</a>.</li>
+      <li><img alt="mxsmp07-icon" src="icons/mxsmp07-icon.jpg" /> [S10] M. Hasan, F. Pellacini, K. Bala. <a href="http://pellacini.di.uniroma1.it/publications/mxsmp07/mxsmp07-paper.pdf"><em>Matrix Row-Column Sampling for the Many Light Problem</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2007), 2007. Links: <a href="http://pellacini.di.uniroma1.it/publications/mxsmp07/mxsmp07-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/mxsmp07/mxsmp07-talk.pdf">talk</a>.</li>
+      <li><img alt="lpaint07-icon" src="icons/lpaint07-icon.jpg" /> [S09] F. Pellacini, F. Battaglia, K. Morley, A. Finkelstein. <a href="http://pellacini.di.uniroma1.it/publications/lpaint07/lpaint07-paper.pdf"><em>Lighting with Paint</em>.</a> ACM Transactions on Graphics, 2007. Links: <a href="http://pellacini.di.uniroma1.it/publications/lpaint07/lpaint07-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/lpaint07/lpaint07-video.mp4">video</a>.</li>
+      <li><img alt="dti06-icon" src="icons/dti06-icon.jpg" /> [S08] M. Hasan, F. Pellacini, K. Bala. <a href="http://pellacini.di.uniroma1.it/publications/dti06/dti06-paper.pdf"><em>Direct-to-Indirect Transfer for Cinematic Relighting</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2006), 2006. Links: <a href="http://pellacini.di.uniroma1.it/publications/dti06/dti06-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/dti06/dti06-video.mp4">video</a><a href="http://pellacini.di.uniroma1.it/publications/dti06/dti06-talk.pdf">talk</a>.</li>
+      <li><img alt="lod05-icon" src="icons/lod05-icon.jpg" /> [S07] F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/lod05/lod05-paper.pdf"><em>User-Configurable Automatic Shader Simplification</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2005), 2005. Links: <a href="http://pellacini.di.uniroma1.it/publications/lod05/lod05-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/lod05/lod05-talk.pdf">talk</a>.</li>
+      <li><img alt="lpics05-icon" src="icons/lpics05-icon.jpg" /> [S06] F. Pellacini, K. Vidimce, A. Lefohn, A. Mohr, M. Leone, J. Warren. <a href="http://pellacini.di.uniroma1.it/publications/lpics05/lpics05-paper.pdf"><em>Lpics: a Hybrid Hardware-Accelerated Relighting Engine for Computer Cinematography</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2005), 2005. Links: <a href="http://pellacini.di.uniroma1.it/publications/lpics05/lpics05-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/lpics05/lpics05-video.mp4">video</a>.</li>
+      <li><img alt="decisiontheory03-icon" src="icons/decisiontheory03-icon.jpg" /> [S05] R. Dumont, F. Pellacini, J. Ferwerda. <a href="http://pellacini.di.uniroma1.it/publications/decisiontheory03/decisiontheory03-paper.pdf"><em>Perceptually-Driven Decision Theory for Interactive Realistic Rendering</em>.</a> ACM Transactions on Graphics, 2003. Links: <a href="http://pellacini.di.uniroma1.it/publications/decisiontheory03/decisiontheory03-paper.pdf">paper</a>.</li>
+      <li><img alt="shadowui02-icon" src="icons/shadowui02-icon.jpg" /> [S04] F. Pellacini, P. Tole, D. Greenberg. <a href="http://pellacini.di.uniroma1.it/publications/shadowui02/shadowui02-paper.pdf"><em>A User Interface for Interactive Cinematic Shadow Design</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2002), 2002. Links: <a href="http://pellacini.di.uniroma1.it/publications/shadowui02/shadowui02-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/shadowui02/shadowui02-talk.pdf">talk</a>.</li>
+      <li><img alt="igids02-icon" src="icons/igids02-icon.jpg" /> [S03] P. Tole, F. Pellacini, B. Walter, D. Greenberg. <a href="http://pellacini.di.uniroma1.it/publications/igids02/igids02-paper.pdf"><em>Interactive Global Illumination in Dynamic Scenes</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2002), 2002. Links: <a href="http://pellacini.di.uniroma1.it/publications/igids02/igids02-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/igids02/igids02-video.mp4">video</a>, <a href="http://pellacini.di.uniroma1.it/publications/igids02/igids02-talk.pdf">talk</a>.</li>
+      <li><img alt="jim02-icon" src="icons/jim02-icon.jpg" /> [S02] J. Kim, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/jim02/jim02-paper.pdf"><em>Jigsaw Image Mosaics</em>.</a> ACM Transactions on Graphics (SIGGRAPH 2002), 2002. Links: <a href="http://pellacini.di.uniroma1.it/publications/jim02/jim02-paper.pdf">paper</a>.</li>
+      <li><img alt="gloss00-icon" src="icons/gloss00-icon.jpg" /> [S01] F. Pellacini, J. Ferwerda, D. Greenberg. <a href="http://pellacini.di.uniroma1.it/publications/gloss00/gloss00-paper.pdf"><em>Toward a Psychophysically-based Light Reflection model for Image Synthesis</em>.</a> SIGGRAPH 2000, 2000. Links: <a href="http://pellacini.di.uniroma1.it/publications/gloss00/gloss00-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/gloss00/gloss00-talk.pdf">talk</a>.</li>
+      </ul>
+      <h2>Journals</h2>
+      <ul>
+      <li><img alt="pop22-icon" src="icons/pop22-icon.jpg" /> [J19] M. Riso, D. Sforza, F. Pellacini  <a href="http://pellacini.di.uniroma1.it/publications/pop22/pop22-paper.pdf"><em>pOp: Parameter Optimization of Differentiable Vector Patterns</em></a>. Computer Graphics Forum, 4 (41), 2022. Links: <a href="http://pellacini.di.uniroma1.it/publications/pop22/pop22-paper.pdf">paper</a>.</li>
+      <li><img alt="nrti20-icon" src="icons/nrti20-icon.jpg" /> [J18] T. G. Dulecha, F. A. Fanni, F. Ponchio, F. Pellacini, A. Giachetti  <a href="http://pellacini.di.uniroma1.it/publications/nrti20/nrti20-paper.pdf"><em>Neural reflectance transformation imaging</em></a>. The Visual Computer, 36 (10), 2161–2174, 2020. Links: <a href="http://pellacini.di.uniroma1.it/publications/nrti20/nrti20-paper.pdf">paper</a>.</li>
+      <li><img alt="gmotion19-icon" src="icons/gmotion19-icon.jpg" /> [J17] E Carra, C. Santoni, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/gmotion19/gmotion19-paper.pdf"><em>Grammar-based procedural animations for motion graphics</em>.</a> Computers &amp; Graphics, 2019. Links: <a href="http://pellacini.di.uniroma1.it/publications/gmotion19/gmotion19-paper.pdf">paper</a>, <a href="https://youtu.be/q8-fYvaKFNQ">youtube</a>, <a href="http://pellacini.di.uniroma1.it/publications/gmotion19/gmotion19-video.mp4">video</a>, <a href="http://pellacini.di.uniroma1.it/publications/gmotion19/gmotion19-supplemental.zip">supplemental</a>.</li>
+      <li><img alt="levelmerge16-icon" src="icons/levelmerge16-icon.jpg" /> [J16] C. Santoni, G. Salvati, V. Tibaldo, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/levelmerge16/levelmerge16-paper.pdf"><em>LevelMerge: Collaborative Game Level Editing by Merging Labeled Graphs</em>.</a> IEEE CG&amp;A, 2016. Links: <a href="http://pellacini.di.uniroma1.it/publications/levelmerge16/levelmerge16-paper.pdf">paper</a>, <a href="https://youtu.be/IhWp_OzCQTU">youtube</a>, <a href="http://pellacini.di.uniroma1.it/publications/levelmerge16/levelmerge16-video.mp4">video</a>.</li>
+      <li><img alt="appeditstar16-icon" src="icons/appeditstar16-icon.jpg" /> [J15] T.-W. Schmidt, F. Pellacini, D. Nowrouzezahrai, W. Jarosz, C. Dachsbacher. <a href="http://pellacini.di.uniroma1.it/publications/appeditstar16/appeditstar16-paper.pdf"><em>State of the Art in Artistic Editing of Appearance, Lighting, and Material</em>.</a> Computer Graphics Forum, 2016. Links: <a href="http://pellacini.di.uniroma1.it/publications/appeditstar16/appeditstar16-paper.pdf">paper</a>.</li>
+      <li><img alt="ppbd15-icon" src="icons/ppbd15-icon.jpg" /> [J14] M. Fratarcangeli, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/ppbd15/ppbd15-paper.pdf"><em>Scalable Partitioning for Parallel Position Based Dynamics</em>.</a> Computer Graphics Forum  (Eurographics), 2015. Links: <a href="http://pellacini.di.uniroma1.it/publications/ppbd15/ppbd15-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/ppbd15/ppbd15-video.mp4">video</a>.</li>
+      <li><img alt="ppbd15-icon" src="icons/ppbd15-icon.jpg" /> [J13] M. Fratarcangeli, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/ppbd14/ppbd14-paper.pdf"><em>A GPU-Based Implementation of Position-Based Dynamics got Interactive Deformable Bodies</em>.</a> Journal of Graphics Tools (extended version of SIGGRAD 2014), 2015. Links: <a href="http://pellacini.di.uniroma1.it/publications/ppbd14/ppbd14-paper.pdf">paper</a>.</li>
+      <li><img alt="giui14-icon" src="icons/giui14-icon.jpg" /> [J12] O. Karlík, M. Růžička, V. Gassenbauer, F. Pellacini, J. Křivánek. <a href="http://pellacini.di.uniroma1.it/publications/giui14/giui14-paper.pdf"><em>Toward Evaluating the Usefulness of Global Illumination for Novices in Lighting Design Tasks</em>.</a> IEEE Transactions on Visualization and Computer Graphics, 2014. Links: <a href="http://pellacini.di.uniroma1.it/publications/giui14/giui14-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/giui14/giui14-video.mp4">video</a>, <a href="http://pellacini.di.uniroma1.it/publications/giui14/giui14-supplemental.zip">supplemental</a>.</li>
+      <li><img alt="envydepth13-icon" src="icons/envydepth13-icon.jpg" /> [J11] F. Banterle, M. Callieri, M. Dellepiane, M. Corsini, F. Pellacini, R. Scopigno. <a href="http://pellacini.di.uniroma1.it/publications/envydepth13/envydepth13-paper.pdf"><em>EnvyDepth: An Interface for Recovering Local Natural Illumination from Environment Maps</em>.</a> Computer Graphics Forum  (Eurographics), 2013. Links: <a href="http://pellacini.di.uniroma1.it/publications/envydepth13/envydepth13-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/envydepth13/envydepth13-supplemental.zip">supplemental</a>.</li>
+      <li><img alt="renderstudy13-icon" src="icons/renderstudy13-icon.jpg" /> [J10] J. Ou, O. Karlik, J. Krivanek, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/renderstudy13/renderstudy13-paper.pdf"><em>Evaluating Progressive Rendering Methods in Appearance Design Tasks</em>.</a> IEEE Computer Graphics and Applications, 2013. Links: <a href="http://pellacini.di.uniroma1.it/publications/renderstudy13/renderstudy13-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/renderstudy13/renderstudy13-video.mp4">video</a>, <a href="http://pellacini.di.uniroma1.it/publications/renderstudy13/renderstudy13-supplemental.zip">supplemental</a>.</li>
+      <li><img alt="ishair12-icon" src="icons/ishair12-icon.jpg" /> [J09] J. Ou, F Xie, P. Krishnamachari, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/ishair12/ishair12-paper.pdf"><em>ISHair: Importance Sampling for Hair Scattering</em>.</a> Computer Graphics Forum (EGRS 2012), 2012. Links: <a href="http://pellacini.di.uniroma1.it/publications/ishair12/ishair12-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/ishair12/ishair12-video.mp4">video</a>, <a href="http://pellacini.di.uniroma1.it/publications/ishair12/ishair12-supplemental.zip">supplemental</a>.</li>
+      <li><img alt="ucct10-icon" src="icons/ucct10-icon.jpg" /> [J08] X. An, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/ucct10/ucct10-paper.pdf"><em>User Controllable Color Transfer</em>.</a> Computer Graphics Forum (EG 2010), 2010. Links: <a href="http://pellacini.di.uniroma1.it/publications/ucct10/ucct10-paper.pdf">paper</a>.</li>
+      <li><img alt="safegi10-icon" src="icons/safegi10-icon.jpg" /> [J07] J. Ou, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/safegi10/safegi10-paper.pdf"><em>SafeGI: Type Checking to Improve Correctness in Rendering System Implementation</em>.</a> Computer Graphics Forum (EGSR 2010), 2010. Links: <a href="http://pellacini.di.uniroma1.it/publications/safegi10/safegi10-paper.pdf">paper</a>.</li>
+      <li><img alt="bendylight10-icon" src="icons/bendylight10-icon.jpg" /> [J06] W. B. Kerr, F. Pellacini, J. Denning. <a href="http://pellacini.di.uniroma1.it/publications/bendylight10/bendylight10-paper.pdf"><em>BendyLights: Artistic Control of Direct Illumination by Curving Light Rays</em>.</a> Computer Graphics Forum (EGSR), 2010. Links: <a href="http://pellacini.di.uniroma1.it/publications/bendylight10/bendylight10-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/bendylight10/bendylight10-video.mp4">video</a>.</li>
+      <li><img alt="scheat10-icon" src="icons/scheat10-icon.jpg" /> [J06] J. Obert, F. Pellacini, S. Pattanaik. <a href="http://pellacini.di.uniroma1.it/publications/scheat10/scheat10-paper.pdf"><em>Visibility Editing For All-Frequency Shadow Design</em>.</a> Computer Graphics Forum (EGSR 2010), 2010. Links: <a href="http://pellacini.di.uniroma1.it/publications/scheat10/scheat10-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/scheat10/scheat10-video.mp4">video</a>.</li>
+      <li><img alt="temporal08-icon" src="icons/temporal08-icon.jpg" /> [J04] M. Hasan, E. Velazquez-Armendariz, F. Pellacini, K. Bala. <a href="http://pellacini.di.uniroma1.it/publications/temporal08/temporal08-paper.pdf"><em>Tensor Clustering for Rendering Many-Light Animations</em>.</a> Computer Graphics Forum (EGSR 2008), 2008. Links: <a href="http://pellacini.di.uniroma1.it/publications/temporal08/temporal08-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/temporal08/temporal08-video.mp4">video</a> <a href="http://pellacini.di.uniroma1.it/publications/temporal08/temporal08-talk.pdf">talk</a>.</li>
+      <li><img alt="icheat08-icon" src="icons/icheat08-icon.jpg" /> [J03] J. Obert, J. Krivanec, F. Pellacini, D. Sykora, S. Pattanaik. <a href="http://pellacini.di.uniroma1.it/publications/icheat08/icheat08-paper.pdf"><em>iCheat: A Representation for Artistic Control of Indirect Cinematic Lighting</em>.</a> Computer Graphics Forum (EGSR 2008), 2008. Links: <a href="http://pellacini.di.uniroma1.it/publications/icheat08/icheat08-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/icheat08/icheat08-talk.pdf">talk</a>.</li>
+      <li><img alt="eyetrack08-icon" src="icons/eyetrack08-icon.jpg" /> [J02] L. Lorigo, M. Haridasan, H. Brynjarsd&#209;ttir, L. Xia, L. Granka, F. Pellacini, B. Pan, T. Joachims, G. Gay. <a href="http://pellacini.di.uniroma1.it/publications/eyetrack08/eyetrack08-paper.pdf"><em>Eye Tracking and Online Search: Lessons Learned and Challenges Ahead</em>.</a> Journal of the American Society for Information Science and Technology (JASIST), 2008. Links: <a href="http://pellacini.di.uniroma1.it/publications/eyetrack08/eyetrack08-paper.pdf">paper</a>.</li>
+      <li><img alt="collabvis07-icon" src="icons/collabvis07-icon.jpg" /> [J01] L. Lorigo, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/collabvis07/collabvis07-paper.pdf"><em>Frequency and Structure of Long Distance Scholarly Collaborations in a Physics Community</em>.</a> Journal of the American Society for Information Science and Technology (JASIST), 2007. Links: <a href="http://pellacini.di.uniroma1.it/publications/collabvis07/collabvis07-paper.pdf">paper</a>.</li>
+      </ul>
+      <h3>Conferences</h3>
+      <ul>
+      <li><img alt="xrcockpit20-icon" src="icons/xrcockpit20-icon.jpg" /> [C14] F. M. Caputo, S. Jacota, S. Krayevskyy, M. Pesavento, F. Pellacini, A. Giachetti. <a href="http://pellacini.di.uniroma1.it/publications/xrcockpit20/xrcockpit20-paper.pdf"><em>XR-Cockpit: a comparison of VR and AR solutions on an interactive training station</em></a>. In ETFA, 2020.</li>
+      <li><img alt="yoctogl19-icon" src="icons/yoctogl19-icon.jpg" /> [C13] G. Nazzaro, E. Carra, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/yoctogl19/yoctogl19-paper.pdf"><em>Yocto/GL: A Data-Oriented Library for Physically-Based Graphics</em></a>. In STAG, 2019. Links: <a href="http://pellacini.di.uniroma1.it/publications/yoctogl19/yoctogl19-paper.pdf">paper</a>.</li>
+      <li><img alt="textons19-icon" src="icons/textons19-icon.jpg" /> [C12] C. Joppi, M. Godi, A. Giachetti, F. Pellacini, M. Cristani. <a href="http://pellacini.di.uniroma1.it/publications/textons19/textons19-paper.pdf"><em>Texture Retrieval in the Wild Through Detection-Based Attributes</em>.</a> ICIAP, 2019. Links: <a href="http://pellacini.di.uniroma1.it/publications/textons19/textons19-paper.pdf">paper</a>.</li>
+      <li><img alt="texelatt19-icon" src="icons/texelatt19-icon.jpg" /> [C11] M. Godi, C. Joppi, A. Giachetti, F. Pellacini, M. Cristani. <a href="http://pellacini.di.uniroma1.it/publications/texelatt19/texelatt19-paper.pdf"><em>Texel-Att: Representing and Classifying Element-based Textures by Attributes</em>.</a> BMVC, 2019. Links: <a href="http://pellacini.di.uniroma1.it/publications/texelatt19/texelatt19-paper.pdf">paper</a>.</li>
+      <li><img alt="gmotion18-icon" src="icons/gmotion18-icon.jpg" /> [C10] E. Carra, C. Santoni, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/gmotion18/gmotion18-paper.pdf"><em>gMotion: A Spatio-Temporal Grammar for the Procedural Generation of Motion Graphics</em>.</a> GI, 2019. Links: <a href="http://pellacini.di.uniroma1.it/publications/gmotion18/gmotion18-paper.pdf">paper</a>, <a href="https://youtu.be/q8-fYvaKFNQ">youtube</a>, <a href="http://pellacini.di.uniroma1.it/publications/gmotion18/gmotion18-video.mp4">video</a>, <a href="http://pellacini.di.uniroma1.it/publications/gmotion18/gmotion18-supplemental.zip">supplemental</a>.</li>
+      <li><img alt="slayer17-icon" src="icons/slayer17-icon.jpg" /> [C09] C. Calabrese, M. Fratarcangeli, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/slayer17/slayer17-paper.pdf"><em>sLayer: a System for Multi-Layered Material Sculpting</em>.</a> EGSR, EI&amp;I Track, 2017. Links: <a href="http://pellacini.di.uniroma1.it/publications/slayer17/slayer17-paper.pdf">paper</a>, <a href="https://youtu.be/OIZ3fy-BWhs">youtube</a>, <a href="http://pellacini.di.uniroma1.it/publications/slayer17/slayer17-video.mp4">video</a>.</li>
+      <li><img alt="ppbd14-icon" src="icons/ppbd14-icon.jpg" /> [C08] M. Fratarcangeli, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/ppbd14/ppbd14-paper.pdf"><em>Towards a Massively Parallel Solver for Position Based Dynamics</em>.</a> SIGRAD 2014. Links: <a href="http://pellacini.di.uniroma1.it/publications/ppbd14/ppbd14-paper.pdf">paper</a>.</li>
+      <li><img alt="appeditstar14-icon" src="icons/appeditstar14-icon.jpg" /> [C07] T.-W. Schmidt, F. Pellacini, D. Nowrouzezahrai, W. Jarosz, C. Dachsbacher. <a href="http://pellacini.di.uniroma1.it/publications/appeditstar14/appeditstar14-paper.pdf"><em>State of the Art in Artistic Editing of Appearance, Lighting, and Material</em>.</a> Eurographics State of the Art Reports 2014. Links: <a href="http://pellacini.di.uniroma1.it/publications/appeditstar14/appeditstar14-paper.pdf">paper</a>.</li>
+      <li><img alt="ishair12-icon" src="icons/ishair12-icon.jpg" /> [C06] J. Ou, F. Xie, P. Krishnamachari, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/ishair12/ishair12-paper.pdf">ISHair: Importance Sampling for Hair Scattering</a>. ACM SIGGRAPH 2012 Talks, 2012.</li>
+      <li><img alt="secvis08-icon" src="icons/secvis08-icon.jpg" /> [C05] S. Bratus, A. Hansen, F. Pellacini, A. Shubina. <a href="http://pellacini.di.uniroma1.it/publications/secvis08/secvis08-paper.pdf"><em>Backhoe, a Packet Trace and Log Browser</em>.</a> Workshop for Visualization for Cyber Security (VizSEC), 2008. Links: <a href="http://pellacini.di.uniroma1.it/publications/secvis08/secvis08-paper.pdf">paper</a>.</li>
+      <li><img alt="hybrid05-icon" src="icons/hybrid05-icon.jpg" /> [C04] H. Li, F. Pellacini, K. Torrance. <a href="http://pellacini.di.uniroma1.it/publications/hybrid05/hybrid05-paper.pdf"><em>A Hybrid Monte Carlo Method for Accurate and Efficient Subsurface Scattering</em>.</a> Eurographics Symposium on Rendering, 2005. Links: <a href="http://pellacini.di.uniroma1.it/publications/hybrid05/hybrid05-paper.pdf">paper</a>, <a href="http://pellacini.di.uniroma1.it/publications/hybrid05/hybrid05-talk.pdf">talk</a>.</li>
+      <li><img alt="fdp03-icon" src="icons/fdp03-icon.jpg" /> [C03] J. Ferwerda, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/fdp03/fdp03-paper.pdf"><em>Functional Difference Predictors (FDPs): measuring meaningful image differences</em>.</a> Asilomar Conference on Signals, Systems, and Computers, 2003. Links: <a href="http://pellacini.di.uniroma1.it/publications/fdp03/fdp03-paper.pdf">paper</a>.</li>
+      <li><img alt="textures01-icon" src="icons/textures01-icon.jpg" /> [C02] R. Dumont, F. Pellacini, J. Ferwerda. <a href="http://pellacini.di.uniroma1.it/publications/textures01/textures01-paper.pdf"><em>Perceptually-based texture caching for hardware rendering</em>.</a> Eurographics Workshop on Rendering, 2001. Links: <a href="http://pellacini.di.uniroma1.it/publications/textures01/textures01-paper.pdf">paper</a>.</li>
+      <li><img alt="gloss01-icon" src="icons/gloss01-icon.jpg" /> [C01] J. Ferwerda, F. Pellacini, D. Greenberg. <a href="http://pellacini.di.uniroma1.it/publications/gloss01/gloss01-paper.pdf"><em>A Psychophysically-Based Model of Surface Gloss Perception</em>.</a> Human vision and electronic imaging VI, 2001. Links: <a href="http://pellacini.di.uniroma1.it/publications/gloss01/gloss01-paper.pdf">paper</a>.</li>
+      </ul>
+      <h3>Book chapters</h3>
+      <ul>
+      <li><img alt="gems07-icon" src="icons/gems07-icon.jpg" /> [B03] F. Pellacini, M. Hašan, K. Bala. <em>Interactive Cinematic Relighting with Global Illumination</em>. In H. Nguyen ed., GPU Gems 3, Addison-Wesley, 2007.</li>
+      <li><img alt="gems03a-icon" src="icons/gems03a-icon.jpg" /> [B02] F. Pellacini, K. Vidimče. <em>Cinematic Lighting</em>. In R. Fernando ed., GPU Gems, Addison-Wesley, 2007.</li>
+      <li><img alt="gems03b-icon" src="icons/gems03b-icon.jpg" /> [B01] M. Bunnel, F. Pellacini. <em>Shadow Map Antialiasing</em>. In R. Fernando ed., GPU Gems, Addison-Wesley, 2007.</li>
+      </ul>
+      <h2>Courses</h2>
+      <h3>University Courses</h3>
+      <ul>
+      <li>F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/graphics20c/graphics20c.html"><em>Computer Graphics</em>.</a> Sapienza University of Rome, <a href="http://pellacini.di.uniroma1.it/publications/graphics17a/graphics17a.html">2017</a>, <a href="http://pellacini.di.uniroma1.it/publications/graphics20a/graphics20a.html">2020a</a>, <a href="http://pellacini.di.uniroma1.it/publications/graphics20c/graphics20c.html">2020b</a>, <a href="http://pellacini.di.uniroma1.it/publications/graphics21a/graphics21a.html">2021</a>, <a href="http://pellacini.di.uniroma1.it/publications/graphics22a/graphics22a.html">2022</a>.</li>
+      <li>F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/graphics20d/graphics20d.html"><em>Fundamentals of Computer Graphics</em>.</a> Sapienza University of Rome, <a href="http://pellacini.di.uniroma1.it/publications/graphics11/graphics11.html">2012</a>, <a href="http://pellacini.di.uniroma1.it/publications/graphics13a/graphics13a.html">2013a</a>, <a href="http://pellacini.di.uniroma1.it/publications/graphics13b/graphics13b.html">2013b</a>, <a href="http://pellacini.di.uniroma1.it/publications/graphics14/graphics14.html">2014</a>, <a href="http://pellacini.di.uniroma1.it/publications/graphics15/graphics15.html">2015</a>, <a href="http://pellacini.di.uniroma1.it/publications/graphics16/graphics16.html">2016</a>, <a href="http://pellacini.di.uniroma1.it/publications/graphics17b/graphics17b.html">2017</a>, <a href="http://pellacini.di.uniroma1.it/publications/graphics20b/graphics20b.html">2020a</a>, <a href="http://pellacini.di.uniroma1.it/publications/graphics20d/graphics20d.html">2020b</a>, <a href="http://pellacini.di.uniroma1.it/publications/graphics22b/graphics22b.html">2021</a>, <a href="http://pellacini.di.uniroma1.it/publications/graphics22b/graphics22b.html">2022</a>.</li>
+      <li>I. Masi, F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/fondamentilab22/fondamentilab22.html"><em>Fondamenti di Programmazione (Lab)</em>.</a> Sapienza University of Rome.</li>
+      <li>F. Pellacini, R. Silvestri, A. Monti. <a href="http://pellacini.di.uniroma1.it/publications/fondamenti16/fondamenti16.html"><em>Fondamenti di Programmazione</em>.</a> Sapienza University of Rome, <a href="http://pellacini.di.uniroma1.it/publications/fondamenti11/fondamenti11.html">2011</a>, <a href="http://pellacini.di.uniroma1.it/publications/fondamenti12/fondamenti12.html">2012</a>, <a href="http://pellacini.di.uniroma1.it/publications/fondamenti13/fondamenti13.html">2013</a>, <a href="http://pellacini.di.uniroma1.it/publications/fondamenti14/fondamenti14.html">2014</a>, <a href="http://pellacini.di.uniroma1.it/publications/fondamenti15/fondamenti15.html">2015</a>, <a href="http://pellacini.di.uniroma1.it/publications/fondamenti16/fondamenti16.html">2016</a>.</li>
+      <li>F. Pellacini. <em>Physics Programming</em>. University of Verona, 2016, 2017.</li>
+      <li>F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/graphics09/graphics09.html"><em>Computer Graphics</em>.</a> Dartmouth College, <a href="http://pellacini.di.uniroma1.it/publications/graphics05/graphics05.html">2005</a>, <a href="http://pellacini.di.uniroma1.it/publications/graphics06/graphics06.html">2006</a>, <a href="http://pellacini.di.uniroma1.it/publications/graphics08/graphics08.html">2008</a>, <a href="http://pellacini.di.uniroma1.it/publications/graphics09/graphics09.html">2009</a>.</li>
+      <li>F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/topics08/topics08.html"><em>Topics in Computer Graphics</em>.</a> Dartmouth College, <a href="http://pellacini.di.uniroma1.it/publications/topics06/topics06.html">2006</a>, <a href="http://pellacini.di.uniroma1.it/publications/topics08/topics08.html">2008</a>.</li>
+      <li>F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/projects10/projects10.html"><em>Projects in Digital Art</em>.</a> Dartmouth College, <a href="http://pellacini.di.uniroma1.it/publications/projects07/projects07.html">2007</a>, <a href="http://pellacini.di.uniroma1.it/publications/projects08/projects08.html">2008</a>, <a href="http://pellacini.di.uniroma1.it/publications/projects10/projects10.html">2010</a>.</li>
+      <li>F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/programming10/programming10.html"><em>Programming for Interactive Digital Art</em>.</a> Dartmouth College, <a href="http://pellacini.di.uniroma1.it/publications/programming10/programming10.html">2010</a>.</li>
+      <li>F. Pellacini. <a href="http://pellacini.di.uniroma1.it/publications/concepts07/concepts07.html"><em>Concepts in Computing</em>.</a> Dartmouth College, 2007.</li>
+      <li>F. Pellacini, D. P. Greenberg. Advanced Computer Animation. Cornell, 2005.</li>
+      <li>F. Pellacini, D. P. Greenberg. Computer Animation. Cornell, 2004.</li>
+      </ul>
+      <h3>Conference Courses</h3>
+      <ul>
+      <li>C. Boyd, K. Fatahalian, T. Forsyth, M. Houston, A. Lefohn, D. Luebke, A. Munshi, J. Olick, J. Owens, F. Pellacini, M. Pharr, J. Shopf. <em>Beyond Programmable Shading</em>. ACM SIGGRAPH, 2008.</li>
+      <li>M. Olano, D. Blythe, L. Gritz, M. Kilgard, M. McCool, F. Pellacini, T. Scheuermann. <em>GPU Shading and Rendering</em>. ACM SIGGRAPH, 2006.</li>
+      </ul>
+      <!-- CHECK LINKS -->
+	  </article>
 	</body>
 </html>
