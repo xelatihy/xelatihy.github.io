@@ -4,19 +4,20 @@
 		<meta charset="utf-8"/>
 		<title>Fabio Pellacini's Homepage</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<style>
+		<!-- style -->
+      <style>
       @import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap);
 
 
       body {
           margin: 0 auto;
           font-family: "Raleway", "San Francisco", "Helvetica Neue", "Helvetica", sans-serif;
-          font-size: 17px;
+          font-size: 16px;
           font-variant-ligatures: common-ligatures;
           font-variant-numeric: oldstyle-nums;
           line-height: 1.6em;
           font-weight: 500;
-          /* text-align: justify; */
+          text-align: justify;
       }
 
       header, footer, article {
@@ -33,7 +34,7 @@
           color: firebrick;
           line-height: 18px;
           padding: 4px 6px;
-          text-transform: lowercase;
+          text-transform: uppercase;
       }
 
       nav:after {
@@ -45,16 +46,47 @@
           line-height: 1.2em;
           margin: 2em 0 0.5em;
           text-align: left;
+          text-transform: uppercase;
+          font-weight: 400;
       }
 
       h2 {
           font-size: 1.5em;
-          margin: 2em 0 0.5em;
+          margin: 2.5em 0 1em;
+          text-transform: uppercase;
+          font-weight: 400;
       }
 
       h3 {
           font-size: 1.2em;
-          margin: 1em 0 0.25em;
+          margin: 1.0em 0 0.25em;
+      }
+
+      div.header {
+          vertical-align: top;
+      }
+
+      div.header-text {
+          display: inline-block;
+          vertical-align: top;
+      }
+
+      div.header-photo {
+          vertical-align: top;
+          width: 25%;
+          float: right;
+      }
+
+      .header-photo img {
+          display: block;
+          width: 100%;
+          margin: 3em 0 1em;
+      }
+
+      #photo {
+          margin: 1em 0;
+          width: 25%;
+          display: block;
       }
 
       p {
@@ -92,7 +124,6 @@
           max-width: 100%;
           float: right;
           margin: 0 0 1em 1em;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
       }
 
       iframe {
@@ -163,24 +194,34 @@
               padding: 0px;
           }
       }
-
-		</style>
+      </style>
+		<!-- /style -->
 	</head>
 	<body lang="en">
 	  <header>
       <nav>
-        <a href='index.html'>about</a>
-        <a href='index.html#books'>books</a>
-        <a href='https://github.com/xelatihy'>code</a>
-        <a href='index.html#publications'>publications</a>
-        <a href='index.html#courses'>courses</a>
+        <a href='index.html#about'>About</a>
+        <a href='index.html#books'>Books</a>
+        <a href='https://github.com/xelatihy'>Code</a>
+        <a href='index.html#publications'>Publications</a>
+        <a href='index.html#courses'>Courses</a>
     	</nav>
 	    </header>
     <article>
+      <section id="header">
+      <div class="header">
+      <div class="header-text">
       <h1>Fabio Pellacini</h1>
       <p>Full Professor of Computer Science<br />
       University of Modena and Reggio Emilia</p>
-      <h2>Bio</h2>
+      </div>
+      <div class="header-photo">
+      <p><img alt="Fabio Pellacini" src="photos/photo-anime.jpg" /></p>
+      </div>
+      </div>
+      </section>
+      <section id="about">
+      <h2>About</h2>
       <p>I am a Full Professor in <a href="http://www.fim.unimore.it">Computer Science</a> at the
       <a href="http://www.unimore.it">University of Modena and Reggio Emilia</a>.
       Before then, I was an Associate and Full Professor at in
@@ -210,10 +251,14 @@
       been nominated as a Junior Faculty Fellow for <a href="https://web.uniroma1.it/sssas/">Sapienza's Scuola Superiore di Studi Avanti</a>.
       I regularly publish in the most prestigious Computer Graphics venues, and have been
       on the program committee of the most prestigious conferences in the field.</p>
+      </section>
+      <section id="books">
       <h2>Books</h2>
       <ul>
       <li><img alt="fondamentibook16-icon" src="icons/fondamentibook16-icon.jpg" /> F. Pellacini. <em>Fondamenti di Programmazione in Python</em>. Apple iBook Store and Amazon Kindle Store (not available now).</li>
       </ul>
+      </section>
+      <section id="publications">
       <h2>Publications</h2>
       <ul>
       <li><img alt="autopop25-icon" src="icons/autopop25-icon.jpg" /> D. Sforza, M. Riso, F. Muzzini, N. Capodieci, F. Pellacini. <a href="https://doi.org/10.1145/3721238.3730667"><em>Interactive Optimization of Scaffolded Procedural Patterns</em></a>. ACM SIGGRAPH, 2025.</li>
@@ -302,6 +347,8 @@
       <li><img alt="gloss01-icon" src="icons/gloss01-icon.jpg" /> J. Ferwerda, F. Pellacini, D. Greenberg. <a href="https://doi.org/10.1117/12.429501"><em>A Psychophysically-Based Model of Surface Gloss Perception</em>.</a> Human vision and electronic imaging VI, 2001.</li>
       <li><img alt="gloss00-icon" src="icons/gloss00-icon.jpg" /> F. Pellacini, J. Ferwerda, D. Greenberg. <a href="https://doi.org/10.1145/344779.344812"><em>Toward a Psychophysically-based Light Reflection model for Image Synthesis</em>.</a> SIGGRAPH 2000, 2000.</li>
       </ul>
+      </section>
+      <section id="courses">
       <h2>Courses</h2>
       <ul>
       <li>F. Pellacini. <em>Computer Graphics</em>. University of Modena and Reggio Emilia, 2024, 2025</li>
@@ -322,6 +369,7 @@
       <li>F. Pellacini, D. P. Greenberg. Advanced Computer Animation. Cornell, 2005.</li>
       <li>F. Pellacini, D. P. Greenberg. Computer Animation. Cornell, 2004.</li>
       </ul>
+      </section>
       <!--
       ppbd15
       -->
