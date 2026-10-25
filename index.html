@@ -4,207 +4,185 @@
 		<meta charset="utf-8"/>
 		<title>Fabio Pellacini's Homepage</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&amp;family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap"/>
 		<!-- style -->
       <style>
-      @import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap);
+      /* Google Fonts use the primary family name. These aliases are installed-font fallbacks. */
 
+      @font-face {
+          font-family: "Crimson Pro Installed";
+          src: local("CrimsonPro-Regular"), local("Crimson Pro Regular");
+          font-weight: 400;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: "Crimson Pro Installed";
+          src: local("CrimsonPro-Italic"), local("Crimson Pro Italic");
+          font-weight: 400;
+          font-style: italic;
+      }
+
+      @font-face {
+          font-family: "Crimson Pro Installed";
+          src: local("CrimsonPro-Bold"), local("Crimson Pro Bold");
+          font-weight: 700;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: "Crimson Pro Installed";
+          src: local("CrimsonPro-BoldItalic"), local("Crimson Pro Bold Italic");
+          font-weight: 700;
+          font-style: italic;
+      }
+
+      @font-face {
+          font-family: "Raleway Installed";
+          src: local("Raleway-Regular"), local("Raleway Regular");
+          font-weight: 400;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: "Raleway Installed";
+          src: local("Raleway-Italic"), local("Raleway Italic");
+          font-weight: 400;
+          font-style: italic;
+      }
+
+      @font-face {
+          font-family: "Raleway Installed";
+          src: local("Raleway-Bold"), local("Raleway Bold");
+          font-weight: 700;
+          font-style: normal;
+      }
+
+      @font-face {
+          font-family: "Raleway Installed";
+          src: local("Raleway-BoldItalic"), local("Raleway Bold Italic");
+          font-weight: 700;
+          font-style: italic;
+      }
+
+      /* Visual direction inspired by Dario Taraborelli's Compact Academic CV:
+         https://latextemplates.com/template/compact-academic-cv/ */
+      * { box-sizing: border-box; }
 
       body {
+          /* Default: 25% of a 768px content area, with 12px side padding. */
+          --image-width: min(192px, calc(25vw - 6px));
           margin: 0 auto;
-          font-family: "Raleway", "San Francisco", "Helvetica Neue", "Helvetica", sans-serif;
-          font-size: 16px;
+          max-width: calc(800px + 160px);
+          padding: 40px 80px 54px;
+          background: #fff;
+          color: #000;
+          font: 400 20px/26px "Crimson Pro", "Crimson Pro Installed", Georgia, serif;
           font-variant-ligatures: common-ligatures;
-          font-variant-numeric: oldstyle-nums;
-          line-height: 1.6em;
-          font-weight: 500;
-          text-align: justify;
+          font-variant-numeric: oldstyle-nums proportional-nums;
+          text-align: left;
+          overflow-wrap: break-word;
       }
 
-      header, footer, article {
-          max-width: 768px;
-          padding: 12px;
-          margin: 0 auto;
-      }
+      header, article, footer { max-width: 800px; margin: 0 auto; }
 
       nav {
-          text-align: left;
-      }
-
-      nav a {
-          color: firebrick;
-          line-height: 18px;
-          padding: 4px 6px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 12px 22px;
+          font: 500 15px/1.5 "Raleway", "Raleway Installed", Arial, sans-serif;
+          letter-spacing: .09em;
           text-transform: uppercase;
       }
 
-      nav:after {
-          clear: both;
-      }
+      nav a { padding: 0; }
+
+      a { color: #B22222; text-decoration: none; }
+      a:hover { text-decoration: underline; text-underline-offset: 3px; }
+      p { margin: 0 0 10px; }
+      #about > p { margin-bottom: 18px; }
 
       h1 {
-          font-size: 2.5em;
-          line-height: 1.2em;
-          margin: 2em 0 0.5em;
-          text-align: left;
-          text-transform: uppercase;
-          font-weight: 400;
+          margin: 0 0 20px;
+          font: 400 40px/1.05 "Raleway", "Raleway Installed", Arial, sans-serif;
+          font-style: normal;
+          text-transform: none;
+          letter-spacing: normal;
       }
 
       h2 {
-          font-size: 1.5em;
-          margin: 2.5em 0 1em;
-          text-transform: uppercase;
-          font-weight: 400;
+          margin: 56px 0 18px;
+          font: 600 28px/1.25 "Raleway", "Raleway Installed", Arial, sans-serif;
+          letter-spacing: 0.02em;
+          font-style: normal;
+          text-transform: none;
       }
 
-      h3 {
-          font-size: 1.2em;
-          margin: 1.0em 0 0.25em;
+      h3 { font-family: "Raleway", "Raleway Installed", Arial, sans-serif; margin: 24px 0 8px; font-size: 18.4px; line-height: 1.4; letter-spacing: 0.01em; font-weight: 500; font-style: normal; text-transform: none; }
+
+      .header {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 28px;
+          padding: 52px 0 12px;
       }
 
-      div.header {
-          vertical-align: top;
-      }
+      .header-text { min-width: 0; }
+      .header-text p { margin: 0; font: inherit; }
+      .header-photo { flex: 0 0 var(--image-width); }
+      .header-photo p { margin: 0; }
+      .header-photo img { display: block; width: 100%; height: auto; margin: 0; }
 
-      div.header-text {
-          display: inline-block;
-          vertical-align: top;
-      }
+      /* As in the reference, group each heading with the text below it and place
+         the larger gap before the next heading, rather than after every section. */
+      article > section:not(#header) { display: flow-root; padding: 0; }
+      ul, ol { margin: 0; padding: 0; list-style: none; }
+      li { display: flow-root; margin: 0 0 12px; padding-left: .75em; text-indent: calc(-1 * .75em); }
+      li > img { display: block; float: right; width: var(--image-width); height: auto; margin: 0 0 0 1em; }
+      img, video, iframe { max-width: 100%; }
+      video, iframe { display: block; margin: 16px auto; }
+      figure { margin: 24px 0; text-align: center; }
+      figcaption p { margin: 4px 0; }
+      section { scroll-margin-top: 24px; }
 
-      div.header-photo {
-          vertical-align: top;
-          width: 25%;
-          float: right;
-      }
-
-      .header-photo img {
-          display: block;
-          width: 100%;
-          margin: 3em 0 1em;
-      }
-
-      #photo {
-          margin: 1em 0;
-          width: 25%;
-          display: block;
-      }
-
-      p {
-          margin: 0 0 0.5em 0;
-      }
-
-      ol, ul {
-          margin: 0 0 18px 0;
-          padding-left: 0;
-          list-style: none;
-      }
-
-      li {
-          clear: both;
-          overflow: auto;
-          margin: 0.5em 0;
-      }
-
-      a {
-          text-decoration: none;
-          color: firebrick;
-      }
-
-      a:hover {
-          text-decoration: underline;
-      }
-
-      img {
-          max-width: 100%;
-      }
-
-      li > img {
-          display: block;
-          width: 25%;
-          max-width: 100%;
-          float: right;
-          margin: 0 0 1em 1em;
-      }
-
-      iframe {
-          display: block;
-          max-width: 100%;
-          margin: 1em auto;
-      }
-
-      video {
-          display: block;
-          max-width: 100%;
-          margin: 1em auto;
-      }
-
-      figure {
-          margin: 24px 0;
-          padding: 0;
-          max-width: 100%;
-          text-align: center;
-      }
-
-      figure img, video {
-          max-width: 100%;
-      }
-
-      figcaption h3, figcaption p {
-          margin: 4px 0;
-      }
-
-      div.paperlinks {
-          margin: 24px 0;
-          padding: 0;
-          text-align: center;
-      }
-
-      div.paperlinks li {
-          display: inline;
-      }
-
-      div.paperlinks li a {
-          color: white;
-          background: black;
-          font-size: 11px;
-          line-height: 18px;
-          letter-spacing: 0.5px;
-          padding: 4px 6px;
-          text-transform: uppercase;
-      }
-
-      div {
-          padding: 0;
-          margin: 0;
+      @media (max-width: 650px) {
+          body { padding: 25px 22px; font-size: 20px; }
+          nav { gap: 12px 18px; }
+          h1 { font-size: 36px; }
+          .header { gap: 14px; padding: 44px 0 8px; }
+          h2 { font-size: 26px; margin-top: 44px; }
       }
 
       @media print {
-          body, article {
-              width: 768px;
-              max-width: 768px;
-              margin: 0;
-              padding: 0;
-          }
-          header, footer {
-              display: none;
-          }
-          @page {
-              size: 850px 1100px;
-              margin: 100px;
-              padding: 0px;
-          }
+          @page { size: A4; margin: 18mm; }
+          body { max-width: none; margin: 0; padding: 0; font-size: 12.5pt; }
+          header, footer { display: none; }
+          h1 { font-size: 36pt; }
+          h2 { margin: 26pt 0 9pt; font-size: 17pt; break-after: avoid; }
+          .header { padding: 0 0 20px; }
+          p { orphans: 3; widows: 3; }
+          li { break-inside: avoid; }
       }
+
+      #photo { margin: 1em 0; width: 25%; display: block; }
+      div.paperlinks { margin: 24px 0; padding: 0; text-align: center; }
+      div.paperlinks li { display: inline; }
+      div.paperlinks li a { color: #B22222; background: transparent; font-size: 11px; line-height: 18px; letter-spacing: .5px; padding: 4px 6px; }
+
       </style>
 		<!-- /style -->
 	</head>
 	<body lang="en">
 	  <header>
       <nav>
-        <a href='index.html#about'>About</a>
-        <a href='index.html#books'>Books</a>
+        <a href='#about'>About</a>
+        <a href='#books'>Books</a>
         <a href='https://github.com/xelatihy'>Code</a>
-        <a href='index.html#publications'>Publications</a>
-        <a href='index.html#courses'>Courses</a>
+        <a href='#publications'>Publications</a>
+        <a href='#courses'>Courses</a>
     	</nav>
 	    </header>
     <article>
